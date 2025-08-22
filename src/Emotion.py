@@ -45,7 +45,7 @@ class EmotionClass:
         llm = self.chatmodel.with_structured_output(json_schema)
         
         prompt_emotion = """
-        分析用户输入的文本情绪，返回情绪类型和负面程度评分。
+        分析用户输入的文本情绪，并以JSON格式返回情绪类型和负面程度评分。
 
         评分规则：
         - 分数范围为1-10

@@ -8,7 +8,7 @@ from .Emotion import EmotionClass
 from langchain_core.caches import InMemoryCache
 from .Storage import get_user
 
-from .Tools import search,get_info_from_local,create_todo,checkSchedule,SetSchedule,SearchSchedule,ModifySchedule,DelSchedule,ConfirmDelSchedule
+from .Tools import web_search,get_info_from_local,create_todo,checkSchedule,SetSchedule,SearchSchedule,ModifySchedule,DelSchedule,ConfirmDelSchedule
 from dotenv import load_dotenv as _load_dotenv
 _load_dotenv()
 import os
@@ -26,7 +26,7 @@ class AgentClass:
         fallback_llm = ChatDeepSeek(model=os.getenv("BACKUP_MODEL"))
         self.modelname = os.getenv("BASE_MODEL")
         self.chatmodel = ChatOpenAI(model=self.modelname).with_fallbacks([fallback_llm])
-        self.tools = [search,get_info_from_local,create_todo,checkSchedule,SetSchedule,SearchSchedule,ModifySchedule,DelSchedule,ConfirmDelSchedule]
+        self.tools = [web_search,get_info_from_local,create_todo,checkSchedule,SetSchedule,SearchSchedule,ModifySchedule,DelSchedule,ConfirmDelSchedule]
         self.memorykey = os.getenv("MEMORY_KEY")
         self.feeling = {"feeling":"default","score":5}
         self.prompt = PromptClass(memorykey=self.memorykey,feeling=self.feeling).Prompt_Structure()
@@ -50,13 +50,16 @@ class AgentClass:
             )
         )
 
-    def run_agent(self,input):
+    def run_agent(self, input, user_id=None):
         # run emotion sensing
         self.feeling = self.emotion.Emotion_Sensing(input)
         self.prompt = PromptClass(memorykey=self.memorykey,feeling=self.feeling).Prompt_Structure()
         print("self.prompt",self.prompt)
+        
+        # 使用传入的user_id
+        current_user_id = user_id
         res = self.agent_chain.with_config({
-            "agent_memory": self.memory.set_memory(session_id=get_user("userid"))
+            "agent_memory": self.memory.set_memory(session_id=current_user_id)
         }).invoke(
             {"input": input}
         )

@@ -46,7 +46,8 @@ class Config:
 # 飞书 API 客户端
 import lark_oapi as lark
 from lark_oapi.api.calendar.v4 import *
-from lark_oapi.api.task.v1 import *
+from lark_oapi.api.task.v2 import *
+from lark_oapi.api.im.v1 import *
 
 class FeishuClient:
     def __init__(self):
@@ -113,8 +114,6 @@ class DeleteSchedule(BaseModel):
     summary: str = Field(description="日程标题")
     description: Optional[str] = Field(description="日程描述")
 
-
-
 class EventsId(BaseModel):
     id: str = Field(description="日程id")
     isAllDay: bool = Field(description="是否全天日程")
@@ -124,7 +123,7 @@ class ScheduleDel(BaseModel):
 
 # 工具函数
 @tool
-def search(query: str) -> str:
+def web_search(query: str) -> str:
     """只有需要了解实时信息或不知道的事情的时候才会使用这个工具."""
     serp = SerpAPIWrapper()
     return serp.run(query)
@@ -140,11 +139,10 @@ def get_info_from_local(query: str) -> str:
         str: 从知识库中检索到的答案
     """
     print("-------RAG-------------")
-    userid = get_user("userid")
-    print(userid)
+    # 简化：不使用用户特定的聊天历史，或使用默认session
     llm = ChatOpenAI(model=os.getenv("BASE_MODEL"))
     memory = MemoryClass(memorykey=os.getenv("MEMORY_KEY"),model=os.getenv("BASE_MODEL"))
-    chat_history = memory.get_memory(session_id=userid).messages if userid else []
+    chat_history = []  # 简化：不使用聊天历史，或使用默认session
     
     condense_question_prompt = ChatPromptTemplate.from_messages([
         ("system", "给出聊天记录和最新的用户问题。可能会引用聊天记录中的上下文，提出一个可以理解的独立问题。没有聊天记录，请勿回答。必要时重新配制，否则原样退还。"),
@@ -200,41 +198,30 @@ def create_todo(todo: TodoInput) -> str:
         client = FeishuClient()
         feishu_client = client.get_client()
         
-        # 构建飞书任务数据
-        task_builder = InputTask.builder() \
+        # 构建飞书任务数据 - 使用 v2 版本的 API
+        task_builder = Task.builder() \
             .summary(todo.subject)
         
         if todo.description:
             task_builder.description(todo.description)
             
         if todo.dueTime:
-            # 将时间戳转换为飞书期望的格式
-            task_builder.due(InputTaskDue.builder()
-                             .timestamp(str(todo.dueTime))
-                             .build())
+            # 将时间戳转换为飞书期望的格式（秒级时间戳字符串）
+            due_timestamp = str(todo.dueTime // 1000)  # 转换为秒级时间戳
+            task_builder.due(Due.builder()
+                           .timestamp(due_timestamp)
+                           .is_all_day(False)
+                           .build())
                              
-        # 设置优先级 (钉钉的优先级映射到飞书)
-        # 钉钉: 10=较低, 20=普通, 30=紧急, 40=非常紧急
-        # 飞书: 0=无, 1=低, 2=中, 3=高, 4=紧急
-        if todo.priority:
-            if todo.priority <= 10:
-                priority = 1  # 低
-            elif todo.priority <= 20:
-                priority = 2  # 中
-            elif todo.priority <= 30:
-                priority = 3  # 高  
-            else:
-                priority = 4  # 紧急
-            
-            task_builder.extra(json.dumps({"priority": priority}))
-        
         # 创建任务请求
         request_body = CreateTaskRequest.builder() \
-            .request_body(task_builder.build()) \
+            .request_body(CreateTaskRequestBody.builder()
+                         .task(task_builder.build())
+                         .build()) \
             .build()
         
         # 调用API创建任务
-        response = feishu_client.task.v1.task.create(request_body)
+        response = feishu_client.task.v2.task.create(request_body)
         
         if response.success():
             task = response.data.task
@@ -258,29 +245,31 @@ def checkSchedule(schedule: ScheduleSchema) -> str:
         feishu_client = client.get_client()
         
         # 构建忙闲查询请求
-        request_body = GetFreeBusyRequest.builder() \
-            .time_min(schedule.startTime) \
-            .time_max(schedule.endTime) \
+        request_body = GetFreebusyListRequest.builder() \
+            .request_body(GetFreebusyListRequestBody.builder()
+                         .time_min(schedule.startTime)
+                         .time_max(schedule.endTime)
+                         .user_id_type("open_id")
+                         .user_ids([schedule.userIds])
+                         .build()) \
             .build()
         
         # 调用API查询忙闲状态
-        response = feishu_client.calendar.v4.freebusy.get(request_body)
+        response = feishu_client.calendar.v4.freebusy.list(request_body)
         
         if response.success():
             # 格式化返回数据，保持与钉钉格式兼容
-            freebusy_data = response.data
-            if not freebusy_data:
-                return {"scheduleInformation": [{"scheduleItems": []}]}
+            freebusy_list = response.data.freebusy_list if response.data else []
             
-            # 转换为钉钉格式的数据结构
             schedule_items = []
-            if hasattr(freebusy_data, 'busy_times'):
-                for busy_time in freebusy_data.busy_times:
-                    schedule_items.append({
-                        "start": {"dateTime": busy_time.start_time},
-                        "end": {"dateTime": busy_time.end_time},
-                        "status": "BUSY"
-                    })
+            for freebusy in freebusy_list:
+                if hasattr(freebusy, 'busy_details'):
+                    for busy_detail in freebusy.busy_details:
+                        schedule_items.append({
+                            "start": {"dateTime": busy_detail.start_time},
+                            "end": {"dateTime": busy_detail.end_time},
+                            "status": "BUSY"
+                        })
             
             return {
                 "scheduleInformation": [{
@@ -305,25 +294,48 @@ def SetSchedule(sets: ScheduleSchemaSet) -> str:
         client = FeishuClient()
         feishu_client = client.get_client()
         
-        # 构建飞书日程事件数据
-        event_start = CalendarEventTimeInfo.builder()
-        event_end = CalendarEventTimeInfo.builder()
+        # 获取主日历 ID
+        list_request = ListCalendarRequest.builder().build()
+        list_response = feishu_client.calendar.v4.calendar.list(list_request)
         
+        if not list_response.success():
+            return f"获取日历列表失败: {list_response.code}: {list_response.msg}"
+            
+        # 使用第一个日历作为主日历
+        calendar_id = "primary"
+        if list_response.data and list_response.data.calendar_list:
+            for cal in list_response.data.calendar_list:
+                if cal.type == "primary":
+                    calendar_id = cal.calendar_id
+                    break
+        
+        # 构建飞书日程事件数据
+        event_builder = CreateCalendarEventRequestBody.builder() \
+            .summary(sets.summary) \
+            .description(sets.description)
+        
+        # 设置开始时间
+        start_time = TimeInfo.builder()
         if sets.isAllDay:
-            event_start.date(sets.start.date)
-            event_end.date(sets.end.date)
+            start_time.date(sets.start.date)
         else:
-            event_start.timestamp(sets.start.dateTime).timezone(sets.start.timeZone)
-            event_end.timestamp(sets.end.dateTime).timezone(sets.end.timeZone)
+            start_time.timestamp(sets.start.dateTime)
+            start_time.timezone(sets.start.timeZone)
+        event_builder.start_time(start_time.build())
+        
+        # 设置结束时间
+        end_time = TimeInfo.builder()
+        if sets.isAllDay:
+            end_time.date(sets.end.date)
+        else:
+            end_time.timestamp(sets.end.dateTime)
+            end_time.timezone(sets.end.timeZone)
+        event_builder.end_time(end_time.build())
         
         # 创建日程事件请求
         request_body = CreateCalendarEventRequest.builder() \
-            .request_body(CalendarEvent.builder()
-                         .summary(sets.summary)
-                         .description(sets.description)
-                         .start_time(event_start.build())
-                         .end_time(event_end.build())
-                         .build()) \
+            .calendar_id(calendar_id) \
+            .request_body(event_builder.build()) \
             .build()
         
         # 调用API创建日程
@@ -350,18 +362,33 @@ def SearchSchedule(search: ScheduleSearch) -> str:
         client = FeishuClient()
         feishu_client = client.get_client()
         
+        # 获取主日历 ID
+        list_request = ListCalendarRequest.builder().build()
+        list_response = feishu_client.calendar.v4.calendar.list(list_request)
+        
+        if not list_response.success():
+            return f"获取日历列表失败: {list_response.code}: {list_response.msg}"
+            
+        calendar_id = "primary"
+        if list_response.data and list_response.data.calendar_list:
+            for cal in list_response.data.calendar_list:
+                if cal.type == "primary":
+                    calendar_id = cal.calendar_id
+                    break
+        
         # 构建查询请求
-        request_body = SearchCalendarEventRequest.builder()
+        request_builder = ListCalendarEventRequest.builder() \
+            .calendar_id(calendar_id)
         
         if search.timeMin:
-            request_body.start_time(search.timeMin)
+            request_builder.start_time(search.timeMin)
         if search.timeMax:
-            request_body.end_time(search.timeMax)
+            request_builder.end_time(search.timeMax)
             
-        request_body = request_body.build()
+        request_body = request_builder.build()
         
         # 调用API查询日程
-        response = feishu_client.calendar.v4.calendar_event.search(request_body)
+        response = feishu_client.calendar.v4.calendar_event.list(request_body)
         
         if response.success():
             events = response.data.items if response.data and response.data.items else []
@@ -374,18 +401,28 @@ def SearchSchedule(search: ScheduleSearch) -> str:
                 event_dict = {
                     'id': event.event_id,
                     'summary': event.summary,
-                    'description': event.description,
-                    'start': {
-                        'dateTime': event.start_time.timestamp if event.start_time else None,
-                        'date': event.start_time.date if event.start_time else None
-                    },
-                    'end': {
-                        'dateTime': event.end_time.timestamp if event.end_time else None,
-                        'date': event.end_time.date if event.end_time else None
-                    },
-                    'isAllDay': bool(event.start_time and event.start_time.date),
-                    'status': 'confirmed'
+                    'description': event.description or "",
+                    'start': {},
+                    'end': {},
+                    'isAllDay': False,
+                    'status': event.status
                 }
+                
+                # 处理开始时间
+                if event.start_time:
+                    if hasattr(event.start_time, 'date') and event.start_time.date:
+                        event_dict['start']['date'] = event.start_time.date
+                        event_dict['isAllDay'] = True
+                    elif hasattr(event.start_time, 'timestamp') and event.start_time.timestamp:
+                        event_dict['start']['dateTime'] = event.start_time.timestamp
+                
+                # 处理结束时间
+                if event.end_time:
+                    if hasattr(event.end_time, 'date') and event.end_time.date:
+                        event_dict['end']['date'] = event.end_time.date
+                    elif hasattr(event.end_time, 'timestamp') and event.end_time.timestamp:
+                        event_dict['end']['dateTime'] = event.end_time.timestamp
+                
                 events_data.append(event_dict)
             
             return {"events": events_data}
@@ -395,7 +432,7 @@ def SearchSchedule(search: ScheduleSearch) -> str:
     except Exception as e:
         return f"查询日程失败: {str(e)}"
 
-def FindPreciseOrder(orginrder: str,events:object) -> str:
+def FindPreciseOrder(orginrder: str, events: object) -> str:
     """查找精确的指令"""
     llm = ChatOpenAI(model=os.getenv("BASE_MODEL"))
     prompt = ChatPromptTemplate.from_messages([
@@ -426,8 +463,6 @@ def FindPreciseOrder(orginrder: str,events:object) -> str:
     except Exception as e:
         print(e)
         return None
-
-
 
 @tool
 def ModifySchedule(search: ScheduleModify) -> str:
@@ -461,6 +496,7 @@ def ModifySchedule(search: ScheduleModify) -> str:
         # 查找要修改的日程
         eventid = None
         isAllDay = False
+        calendar_id = "primary"
         
         if len(events) > 1:
             orginOder = f"description: {search.description}, start: {search.start}, end: {search.end}, summary: {search.summary}"
@@ -479,38 +515,49 @@ def ModifySchedule(search: ScheduleModify) -> str:
         client = FeishuClient()
         feishu_client = client.get_client()
         
+        # 获取主日历 ID
+        list_request = ListCalendarRequest.builder().build()
+        list_response = feishu_client.calendar.v4.calendar.list(list_request)
+        
+        if list_response.data and list_response.data.calendar_list:
+            for cal in list_response.data.calendar_list:
+                if cal.type == "primary":
+                    calendar_id = cal.calendar_id
+                    break
+        
         # 构建修改请求
-        calendar_event = CalendarEvent.builder()
+        update_builder = PatchCalendarEventRequestBody.builder()
         
         if search.summary:
-            calendar_event.summary(search.summary)
+            update_builder.summary(search.summary)
         if search.description:
-            calendar_event.description(search.description)
+            update_builder.description(search.description)
             
         if search.start:
-            event_start = CalendarEventTimeInfo.builder()
+            start_time = TimeInfo.builder()
             if isAllDay and search.start.date:
-                event_start.date(search.start.date)
+                start_time.date(search.start.date)
             elif search.start.dateTime:
-                event_start.timestamp(search.start.dateTime)
+                start_time.timestamp(search.start.dateTime)
                 if search.start.timeZone:
-                    event_start.timezone(search.start.timeZone)
-            calendar_event.start_time(event_start.build())
+                    start_time.timezone(search.start.timeZone)
+            update_builder.start_time(start_time.build())
 
         if search.end:
-            event_end = CalendarEventTimeInfo.builder()
+            end_time = TimeInfo.builder()
             if isAllDay and search.end.date:
-                event_end.date(search.end.date)
+                end_time.date(search.end.date)
             elif search.end.dateTime:
-                event_end.timestamp(search.end.dateTime)
+                end_time.timestamp(search.end.dateTime)
                 if search.end.timeZone:
-                    event_end.timezone(search.end.timeZone)
-            calendar_event.end_time(event_end.build())
+                    end_time.timezone(search.end.timeZone)
+            update_builder.end_time(end_time.build())
         
         # 创建修改请求
         request_body = PatchCalendarEventRequest.builder() \
+            .calendar_id(calendar_id) \
             .calendar_event_id(eventid) \
-            .request_body(calendar_event.build()) \
+            .request_body(update_builder.build()) \
             .build()
         
         # 调用API修改日程
@@ -523,6 +570,7 @@ def ModifySchedule(search: ScheduleModify) -> str:
             
     except Exception as e:
         return f"修改日程失败: {str(e)}"
+
 @tool
 def DelSchedule(query: DeleteSchedule) -> str:
     """当用户要求删除日程时调用此工具
@@ -569,8 +617,20 @@ def ConfirmDelSchedule(query: ScheduleDel) -> str:
         client = FeishuClient()
         feishu_client = client.get_client()
         
+        # 获取主日历 ID
+        list_request = ListCalendarRequest.builder().build()
+        list_response = feishu_client.calendar.v4.calendar.list(list_request)
+        
+        calendar_id = "primary"
+        if list_response.data and list_response.data.calendar_list:
+            for cal in list_response.data.calendar_list:
+                if cal.type == "primary":
+                    calendar_id = cal.calendar_id
+                    break
+        
         # 构建删除请求
         request_body = DeleteCalendarEventRequest.builder() \
+            .calendar_id(calendar_id) \
             .calendar_event_id(query.eventid) \
             .build()
         
@@ -584,7 +644,6 @@ def ConfirmDelSchedule(query: ScheduleDel) -> str:
             
     except Exception as e:
         return f"删除日程失败: {str(e)}"
-        
 
 
 # 初始化配置

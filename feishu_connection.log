@@ -1,0 +1,1067 @@
+2025-08-21 23:43:42,154 - Feishu - INFO - Starting Feishu Long Connection Service
+2025-08-21 23:43:42,154 - Feishu - INFO - Starting Feishu WebSocket Client
+2025-08-21 23:43:42,154 - Feishu - INFO - App ID: cli_a82e2062ec79d00c
+2025-08-21 23:43:42,154 - Feishu - INFO - Event handler registered successfully
+2025-08-21 23:43:42,155 - Feishu - INFO - Starting WebSocket connection...
+2025-08-21 23:43:47,176 - Lark - ERROR - connect failed, err: HTTPSConnectionPool(host='open.feishu.cn', port=443): Max retries exceeded with url: /callback/ws/endpoint (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1006)')))
+2025-08-21 23:43:56,775 - Lark - INFO - trying to reconnect for the 1st time
+2025-08-21 23:44:01,782 - Lark - ERROR - connect failed, err: HTTPSConnectionPool(host='open.feishu.cn', port=443): Max retries exceeded with url: /callback/ws/endpoint (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1006)')))
+2025-08-21 23:44:12,351 - Feishu - INFO - Service interrupted by user
+2025-08-21 23:44:12,352 - Feishu - INFO - Feishu long connection service stopped
+2025-08-21 23:44:19,163 - Feishu - INFO - Starting Feishu Long Connection Service
+2025-08-21 23:44:19,163 - Feishu - INFO - Starting Feishu WebSocket Client
+2025-08-21 23:44:19,163 - Feishu - INFO - App ID: cli_a82e2062ec79d00c
+2025-08-21 23:44:19,163 - Feishu - INFO - Event handler registered successfully
+2025-08-21 23:44:19,163 - Feishu - INFO - Starting WebSocket connection...
+2025-08-21 23:44:19,809 - Lark - INFO - connected to wss://msg-frontier.feishu.cn/ws/v2?fpid=493&aid=552564&device_id=7541065140793556994&access_key=6fddb239e1f17c4193f82fdba5b2a632&service_id=33554678&ticket=33ef0ed1-d302-4c58-bfed-34ff59a5d70d [conn_id=7541065140793556994]
+2025-08-21 23:44:19,811 - Lark - DEBUG - ping success [conn_id=7541065140793556994]
+2025-08-21 23:44:19,886 - Lark - DEBUG - receive pong [conn_id=7541065140793556994]
+2025-08-21 23:44:27,168 - Lark - DEBUG - receive message, message_type: event, message_id: 9d492b01-c790-48a4-bc01-aae80f205d07, trace_id: f8f48699999044e46c10d82ab3b1d6ff, payload: {"schema":"2.0","header":{"event_id":"f8f48699999044e46c10d82ab3b1d6ff","token":"","create_time":"1755791065834","event_type":"im.chat.access_event.bot_p2p_chat_entered_v1","tenant_key":"1bc11fe2489f175f","app_id":"cli_a82e2062ec79d00c"},"event":{"chat_id":"oc_4151e119655cc70501d1d7b6eb144689","last_message_create_time":"1755790321712","last_message_id":"om_x100b4547f1d408880f2c07730830f34","operator_id":{"open_id":"ou_2f54b7d185b170a7db045cd0ad02185a","union_id":"on_21fcd99f23e1594eb2281ce43233776c","user_id":null}}} [conn_id=7541065140793556994]
+2025-08-21 23:44:27,169 - Lark - ERROR - handle message failed, message_type: event, message_id: 9d492b01-c790-48a4-bc01-aae80f205d07, trace_id: f8f48699999044e46c10d82ab3b1d6ff, err: processor not found, type: im.chat.access_event.bot_p2p_chat_entered_v1 [conn_id=7541065140793556994]
+2025-08-21 23:44:41,967 - Lark - DEBUG - receive message, message_type: event, message_id: 7d251882-bbc1-4cd4-a725-e1ba48550327, trace_id: f8f48699999044e46c10d82ab3b1d6ff, payload: {"schema":"2.0","header":{"event_id":"f8f48699999044e46c10d82ab3b1d6ff","token":"","create_time":"1755791065834","event_type":"im.chat.access_event.bot_p2p_chat_entered_v1","tenant_key":"1bc11fe2489f175f","app_id":"cli_a82e2062ec79d00c"},"event":{"chat_id":"oc_4151e119655cc70501d1d7b6eb144689","last_message_create_time":"1755790321712","last_message_id":"om_x100b4547f1d408880f2c07730830f34","operator_id":{"open_id":"ou_2f54b7d185b170a7db045cd0ad02185a","union_id":"on_21fcd99f23e1594eb2281ce43233776c","user_id":null}}} [conn_id=7541065140793556994]
+2025-08-21 23:44:41,967 - Lark - ERROR - handle message failed, message_type: event, message_id: 7d251882-bbc1-4cd4-a725-e1ba48550327, trace_id: f8f48699999044e46c10d82ab3b1d6ff, err: processor not found, type: im.chat.access_event.bot_p2p_chat_entered_v1 [conn_id=7541065140793556994]
+2025-08-21 23:46:19,813 - Lark - DEBUG - ping success [conn_id=7541065140793556994]
+2025-08-21 23:46:20,082 - Lark - DEBUG - receive pong [conn_id=7541065140793556994]
+2025-08-21 23:48:19,819 - Lark - DEBUG - ping success [conn_id=7541065140793556994]
+2025-08-21 23:48:19,922 - Lark - DEBUG - receive pong [conn_id=7541065140793556994]
+2025-08-21 23:49:42,009 - Lark - DEBUG - receive message, message_type: event, message_id: c5a138be-d7c6-4b77-b212-708b0ca01c7a, trace_id: f8f48699999044e46c10d82ab3b1d6ff, payload: {"schema":"2.0","header":{"event_id":"f8f48699999044e46c10d82ab3b1d6ff","token":"","create_time":"1755791065834","event_type":"im.chat.access_event.bot_p2p_chat_entered_v1","tenant_key":"1bc11fe2489f175f","app_id":"cli_a82e2062ec79d00c"},"event":{"chat_id":"oc_4151e119655cc70501d1d7b6eb144689","last_message_create_time":"1755790321712","last_message_id":"om_x100b4547f1d408880f2c07730830f34","operator_id":{"open_id":"ou_2f54b7d185b170a7db045cd0ad02185a","union_id":"on_21fcd99f23e1594eb2281ce43233776c","user_id":null}}} [conn_id=7541065140793556994]
+2025-08-21 23:49:42,009 - Lark - ERROR - handle message failed, message_type: event, message_id: c5a138be-d7c6-4b77-b212-708b0ca01c7a, trace_id: f8f48699999044e46c10d82ab3b1d6ff, err: processor not found, type: im.chat.access_event.bot_p2p_chat_entered_v1 [conn_id=7541065140793556994]
+2025-08-21 23:50:19,823 - Lark - DEBUG - ping success [conn_id=7541065140793556994]
+2025-08-21 23:50:19,908 - Lark - DEBUG - receive pong [conn_id=7541065140793556994]
+2025-08-21 23:52:19,825 - Lark - DEBUG - ping success [conn_id=7541065140793556994]
+2025-08-21 23:52:19,894 - Lark - DEBUG - receive pong [conn_id=7541065140793556994]
+2025-08-21 23:54:19,831 - Lark - DEBUG - ping success [conn_id=7541065140793556994]
+2025-08-21 23:54:19,902 - Lark - DEBUG - receive pong [conn_id=7541065140793556994]
+2025-08-21 23:56:19,834 - Lark - DEBUG - ping success [conn_id=7541065140793556994]
+2025-08-21 23:56:19,911 - Lark - DEBUG - receive pong [conn_id=7541065140793556994]
+2025-08-21 23:58:19,837 - Lark - DEBUG - ping success [conn_id=7541065140793556994]
+2025-08-21 23:58:19,904 - Lark - DEBUG - receive pong [conn_id=7541065140793556994]
+2025-08-21 23:58:26,799 - Feishu - INFO - Service interrupted by user
+2025-08-21 23:58:26,799 - Feishu - INFO - Feishu long connection service stopped
+2025-08-22 00:00:43,979 - Feishu - INFO - Starting Feishu Long Connection Service
+2025-08-22 00:00:43,979 - Feishu - INFO - Starting Feishu WebSocket Client
+2025-08-22 00:00:43,979 - Feishu - INFO - App ID: cli_a82e2062ec79d00c
+2025-08-22 00:00:43,979 - Feishu - ERROR - Error in WebSocket client: name 'ç' is not defined
+Traceback (most recent call last):
+  File "/Users/junhui/code/python-code/feishu_agent/src/FeishuWebHook.py", line 168, in start_ws_client
+    ç
+NameError: name 'ç' is not defined
+2025-08-22 00:00:43,979 - Feishu - INFO - Feishu long connection service stopped
+2025-08-22 00:01:06,952 - Feishu - INFO - Starting Feishu Long Connection Service
+2025-08-22 00:01:06,952 - Feishu - INFO - Starting Feishu WebSocket Client
+2025-08-22 00:01:06,952 - Feishu - INFO - App ID: cli_a82e2062ec79d00c
+2025-08-22 00:01:06,953 - Feishu - INFO - Event handler registered successfully
+2025-08-22 00:01:06,953 - Feishu - INFO - Starting WebSocket connection...
+2025-08-22 00:01:10,559 - Lark - INFO - connected to wss://msg-frontier.feishu.cn/ws/v2?fpid=493&aid=552564&device_id=7541069182365548548&access_key=70cda9ecea63957d9811a0c67503f9b5&service_id=33554678&ticket=c85f0f6a-5e0b-4cc1-9836-55e8d2895cf4 [conn_id=7541069182365548548]
+2025-08-22 00:01:10,561 - Lark - DEBUG - ping success [conn_id=7541069182365548548]
+2025-08-22 00:01:10,982 - Lark - DEBUG - receive pong [conn_id=7541069182365548548]
+2025-08-22 00:01:15,584 - Lark - DEBUG - receive message, message_type: event, message_id: 495d0bbe-f88b-45b3-b22c-2f8b19ccce1a, trace_id: 144e933625ae51d889fe48d25fe58267, payload: {"schema":"2.0","header":{"event_id":"144e933625ae51d889fe48d25fe58267","token":"","create_time":"1755792071808","event_type":"im.chat.access_event.bot_p2p_chat_entered_v1","tenant_key":"1bc11fe2489f175f","app_id":"cli_a82e2062ec79d00c"},"event":{"chat_id":"oc_4151e119655cc70501d1d7b6eb144689","last_message_create_time":"1755791072679","last_message_id":"om_x100b4547a0c4888c0f1dc6398ee63b3","operator_id":{"open_id":"ou_2f54b7d185b170a7db045cd0ad02185a","union_id":"on_21fcd99f23e1594eb2281ce43233776c","user_id":null}}} [conn_id=7541069182365548548]
+2025-08-22 00:01:15,585 - Feishu - INFO - Bot entered P2P chat: {
+    "schema": "2.0",
+    "header": {
+        "event_id": "144e933625ae51d889fe48d25fe58267",
+        "token": "",
+        "create_time": "1755792071808",
+        "event_type": "im.chat.access_event.bot_p2p_chat_entered_v1",
+        "tenant_key": "1bc11fe2489f175f",
+        "app_id": "cli_a82e2062ec79d00c"
+    },
+    "event": {
+        "chat_id": "oc_4151e119655cc70501d1d7b6eb144689",
+        "operator_id": {
+            "open_id": "ou_2f54b7d185b170a7db045cd0ad02185a",
+            "union_id": "on_21fcd99f23e1594eb2281ce43233776c"
+        },
+        "last_message_id": "om_x100b4547a0c4888c0f1dc6398ee63b3",
+        "last_message_create_time": "1755791072679"
+    }
+}
+2025-08-22 00:01:15,585 - Feishu - INFO - Bot entered chat: oc_4151e119655cc70501d1d7b6eb144689
+2025-08-22 00:02:08,953 - Lark - ERROR - receive message loop exit, err: no close frame received or sent [conn_id=7541069182365548548]
+2025-08-22 00:02:08,956 - Lark - INFO - disconnected to wss://msg-frontier.feishu.cn/ws/v2?fpid=493&aid=552564&device_id=7541069182365548548&access_key=70cda9ecea63957d9811a0c67503f9b5&service_id=33554678&ticket=c85f0f6a-5e0b-4cc1-9836-55e8d2895cf4 [conn_id=7541069182365548548]
+2025-08-22 00:02:26,495 - Lark - INFO - trying to reconnect for the 1st time
+2025-08-22 00:02:31,511 - Lark - ERROR - connect failed, err: HTTPSConnectionPool(host='open.feishu.cn', port=443): Max retries exceeded with url: /callback/ws/endpoint (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1006)')))
+2025-08-22 00:03:00,636 - Feishu - INFO - Service interrupted by user
+2025-08-22 00:03:00,637 - Feishu - INFO - Feishu long connection service stopped
+2025-08-22 00:03:05,661 - Feishu - INFO - Starting Feishu Long Connection Service
+2025-08-22 00:03:05,661 - Feishu - INFO - Starting Feishu WebSocket Client
+2025-08-22 00:03:05,661 - Feishu - INFO - App ID: cli_a82e2062ec79d00c
+2025-08-22 00:03:05,661 - Feishu - INFO - Event handler registered successfully
+2025-08-22 00:03:05,661 - Feishu - INFO - Starting WebSocket connection...
+2025-08-22 00:03:11,248 - Lark - INFO - connected to wss://msg-frontier.feishu.cn/ws/v2?fpid=493&aid=552564&device_id=7541069697519140867&access_key=312882e025a60d74867b73919ae23ac4&service_id=33554678&ticket=29be429a-702e-449d-8f9c-793064fe5d71 [conn_id=7541069697519140867]
+2025-08-22 00:03:11,250 - Lark - DEBUG - ping success [conn_id=7541069697519140867]
+2025-08-22 00:03:11,812 - Lark - DEBUG - receive pong [conn_id=7541069697519140867]
+2025-08-22 00:03:15,920 - Lark - DEBUG - receive message, message_type: event, message_id: c3b1bf14-f33d-4127-9738-4dae24b69566, trace_id: 871e61cbb6a16da73f9d6bf9edc9f0da, payload: {"schema":"2.0","header":{"event_id":"871e61cbb6a16da73f9d6bf9edc9f0da","token":"","create_time":"1755792193990","event_type":"im.chat.access_event.bot_p2p_chat_entered_v1","tenant_key":"1bc11fe2489f175f","app_id":"cli_a82e2062ec79d00c"},"event":{"chat_id":"oc_4151e119655cc70501d1d7b6eb144689","last_message_create_time":"1755791072679","last_message_id":"om_x100b4547a0c4888c0f1dc6398ee63b3","operator_id":{"open_id":"ou_2f54b7d185b170a7db045cd0ad02185a","union_id":"on_21fcd99f23e1594eb2281ce43233776c","user_id":null}}} [conn_id=7541069697519140867]
+2025-08-22 00:03:15,921 - Feishu - INFO - Bot entered P2P chat: {
+    "schema": "2.0",
+    "header": {
+        "event_id": "871e61cbb6a16da73f9d6bf9edc9f0da",
+        "token": "",
+        "create_time": "1755792193990",
+        "event_type": "im.chat.access_event.bot_p2p_chat_entered_v1",
+        "tenant_key": "1bc11fe2489f175f",
+        "app_id": "cli_a82e2062ec79d00c"
+    },
+    "event": {
+        "chat_id": "oc_4151e119655cc70501d1d7b6eb144689",
+        "operator_id": {
+            "open_id": "ou_2f54b7d185b170a7db045cd0ad02185a",
+            "union_id": "on_21fcd99f23e1594eb2281ce43233776c"
+        },
+        "last_message_id": "om_x100b4547a0c4888c0f1dc6398ee63b3",
+        "last_message_create_time": "1755791072679"
+    }
+}
+2025-08-22 00:03:15,922 - Feishu - INFO - Bot entered chat: oc_4151e119655cc70501d1d7b6eb144689
+2025-08-22 00:03:53,048 - Lark - DEBUG - receive message, message_type: event, message_id: e58b44b8-2de4-43b9-a619-651b4d010792, trace_id: e947503f6ad941aa0a0cfaac3eec67cc, payload: {"schema":"2.0","header":{"event_id":"e947503f6ad941aa0a0cfaac3eec67cc","token":"","create_time":"1755788314650","event_type":"im.chat.access_event.bot_p2p_chat_entered_v1","tenant_key":"1bc11fe2489f175f","app_id":"cli_a82e2062ec79d00c"},"event":{"chat_id":"oc_4151e119655cc70501d1d7b6eb144689","last_message_create_time":"1755753334235","last_message_id":"om_x100b455ef9af888c0f32e3a0c0af948","operator_id":{"open_id":"ou_2f54b7d185b170a7db045cd0ad02185a","union_id":"on_21fcd99f23e1594eb2281ce43233776c","user_id":null}}} [conn_id=7541069697519140867]
+2025-08-22 00:03:53,049 - Feishu - INFO - Bot entered P2P chat: {
+    "schema": "2.0",
+    "header": {
+        "event_id": "e947503f6ad941aa0a0cfaac3eec67cc",
+        "token": "",
+        "create_time": "1755788314650",
+        "event_type": "im.chat.access_event.bot_p2p_chat_entered_v1",
+        "tenant_key": "1bc11fe2489f175f",
+        "app_id": "cli_a82e2062ec79d00c"
+    },
+    "event": {
+        "chat_id": "oc_4151e119655cc70501d1d7b6eb144689",
+        "operator_id": {
+            "open_id": "ou_2f54b7d185b170a7db045cd0ad02185a",
+            "union_id": "on_21fcd99f23e1594eb2281ce43233776c"
+        },
+        "last_message_id": "om_x100b455ef9af888c0f32e3a0c0af948",
+        "last_message_create_time": "1755753334235"
+    }
+}
+2025-08-22 00:03:53,050 - Feishu - INFO - Bot entered chat: oc_4151e119655cc70501d1d7b6eb144689
+2025-08-22 00:04:10,035 - Lark - DEBUG - receive message, message_type: event, message_id: 80dc16c3-8687-4a96-b0d0-80c74c272116, trace_id: 0e7d00eb736c03f4a0144ae4f28fdb5b, payload: {"schema":"2.0","header":{"event_id":"0e7d00eb736c03f4a0144ae4f28fdb5b","token":"","create_time":"1755788332001","event_type":"im.chat.access_event.bot_p2p_chat_entered_v1","tenant_key":"1bc11fe2489f175f","app_id":"cli_a82e2062ec79d00c"},"event":{"chat_id":"oc_4151e119655cc70501d1d7b6eb144689","last_message_create_time":"1755788322675","last_message_id":"om_x100b45470ce488b80f2b2dfda2cf79a","operator_id":{"open_id":"ou_2f54b7d185b170a7db045cd0ad02185a","union_id":"on_21fcd99f23e1594eb2281ce43233776c","user_id":null}}} [conn_id=7541069697519140867]
+2025-08-22 00:04:10,037 - Feishu - INFO - Bot entered P2P chat: {
+    "schema": "2.0",
+    "header": {
+        "event_id": "0e7d00eb736c03f4a0144ae4f28fdb5b",
+        "token": "",
+        "create_time": "1755788332001",
+        "event_type": "im.chat.access_event.bot_p2p_chat_entered_v1",
+        "tenant_key": "1bc11fe2489f175f",
+        "app_id": "cli_a82e2062ec79d00c"
+    },
+    "event": {
+        "chat_id": "oc_4151e119655cc70501d1d7b6eb144689",
+        "operator_id": {
+            "open_id": "ou_2f54b7d185b170a7db045cd0ad02185a",
+            "union_id": "on_21fcd99f23e1594eb2281ce43233776c"
+        },
+        "last_message_id": "om_x100b45470ce488b80f2b2dfda2cf79a",
+        "last_message_create_time": "1755788322675"
+    }
+}
+2025-08-22 00:04:10,038 - Feishu - INFO - Bot entered chat: oc_4151e119655cc70501d1d7b6eb144689
+2025-08-22 00:05:07,867 - Feishu - INFO - Service interrupted by user
+2025-08-22 00:05:07,868 - Feishu - INFO - Feishu long connection service stopped
+2025-08-22 00:05:13,221 - Feishu - INFO - Starting Feishu Long Connection Service
+2025-08-22 00:05:13,221 - Feishu - INFO - Starting Feishu WebSocket Client
+2025-08-22 00:05:13,221 - Feishu - INFO - App ID: cli_a82e2062ec79d00c
+2025-08-22 00:05:13,222 - Feishu - INFO - Event handler registered successfully
+2025-08-22 00:05:13,222 - Feishu - INFO - Starting WebSocket connection...
+2025-08-22 00:05:16,637 - Lark - INFO - connected to wss://msg-frontier.feishu.cn/ws/v2?fpid=493&aid=552564&device_id=7541070342728318980&access_key=250922d806159fe01104b0a2d889bf77&service_id=33554678&ticket=f4ede5dd-80ea-49ce-a094-484646c79af1 [conn_id=7541070342728318980]
+2025-08-22 00:05:16,640 - Lark - DEBUG - ping success [conn_id=7541070342728318980]
+2025-08-22 00:05:17,116 - Lark - DEBUG - receive pong [conn_id=7541070342728318980]
+2025-08-22 00:05:19,240 - Lark - DEBUG - receive message, message_type: event, message_id: ee05ff73-600e-41e8-9253-eb425deaf6f1, trace_id: a46e0f24d62bd6443ec86c1224b092ee, payload: {"schema":"2.0","header":{"event_id":"a46e0f24d62bd6443ec86c1224b092ee","token":"","create_time":"1755792317881","event_type":"im.chat.access_event.bot_p2p_chat_entered_v1","tenant_key":"1bc11fe2489f175f","app_id":"cli_a82e2062ec79d00c"},"event":{"chat_id":"oc_4151e119655cc70501d1d7b6eb144689","last_message_create_time":"1755791072679","last_message_id":"om_x100b4547a0c4888c0f1dc6398ee63b3","operator_id":{"open_id":"ou_2f54b7d185b170a7db045cd0ad02185a","union_id":"on_21fcd99f23e1594eb2281ce43233776c","user_id":null}}} [conn_id=7541070342728318980]
+2025-08-22 00:05:19,240 - Feishu - INFO - Bot entered P2P chat: {
+    "schema": "2.0",
+    "header": {
+        "event_id": "a46e0f24d62bd6443ec86c1224b092ee",
+        "token": "",
+        "create_time": "1755792317881",
+        "event_type": "im.chat.access_event.bot_p2p_chat_entered_v1",
+        "tenant_key": "1bc11fe2489f175f",
+        "app_id": "cli_a82e2062ec79d00c"
+    },
+    "event": {
+        "chat_id": "oc_4151e119655cc70501d1d7b6eb144689",
+        "operator_id": {
+            "open_id": "ou_2f54b7d185b170a7db045cd0ad02185a",
+            "union_id": "on_21fcd99f23e1594eb2281ce43233776c"
+        },
+        "last_message_id": "om_x100b4547a0c4888c0f1dc6398ee63b3",
+        "last_message_create_time": "1755791072679"
+    }
+}
+2025-08-22 00:05:19,240 - Feishu - INFO - Bot entered chat: oc_4151e119655cc70501d1d7b6eb144689
+2025-08-22 00:07:16,653 - Lark - DEBUG - ping success [conn_id=7541070342728318980]
+2025-08-22 00:07:17,114 - Lark - DEBUG - receive pong [conn_id=7541070342728318980]
+2025-08-22 00:09:16,660 - Lark - DEBUG - ping success [conn_id=7541070342728318980]
+2025-08-22 00:10:02,508 - Lark - ERROR - receive message loop exit, err: sent 1011 (internal error) keepalive ping timeout; no close frame received [conn_id=7541070342728318980]
+2025-08-22 00:10:02,512 - Lark - INFO - disconnected to wss://msg-frontier.feishu.cn/ws/v2?fpid=493&aid=552564&device_id=7541070342728318980&access_key=250922d806159fe01104b0a2d889bf77&service_id=33554678&ticket=f4ede5dd-80ea-49ce-a094-484646c79af1 [conn_id=7541070342728318980]
+2025-08-22 00:10:09,962 - Lark - INFO - trying to reconnect for the 1st time
+2025-08-22 00:10:14,999 - Lark - ERROR - connect failed, err: HTTPSConnectionPool(host='open.feishu.cn', port=443): Max retries exceeded with url: /callback/ws/endpoint (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1006)')))
+2025-08-22 00:12:15,003 - Lark - INFO - trying to reconnect for the 2nd time
+2025-08-22 00:12:15,663 - Lark - INFO - connected to wss://msg-frontier.feishu.cn/ws/v2?fpid=493&aid=552564&device_id=7541072364671664130&access_key=ff8f9b65637ef890f2a3f2a7c4951b67&service_id=33554678&ticket=654ecfd1-4d1d-4ba6-bc75-491a46966068 [conn_id=7541072364671664130]
+2025-08-22 00:13:16,666 - Lark - DEBUG - ping success [conn_id=7541072364671664130]
+2025-08-22 00:13:16,810 - Lark - DEBUG - receive pong [conn_id=7541072364671664130]
+2025-08-22 00:15:16,671 - Lark - DEBUG - ping success [conn_id=7541072364671664130]
+2025-08-22 00:15:16,795 - Lark - DEBUG - receive pong [conn_id=7541072364671664130]
+2025-08-22 00:17:16,683 - Lark - DEBUG - ping success [conn_id=7541072364671664130]
+2025-08-22 00:17:16,834 - Lark - DEBUG - receive pong [conn_id=7541072364671664130]
+2025-08-22 00:18:31,049 - Feishu - INFO - Service interrupted by user
+2025-08-22 00:18:31,051 - Feishu - INFO - Feishu long connection service stopped
+2025-08-22 00:18:42,157 - Feishu - INFO - Starting Feishu Long Connection Service
+2025-08-22 00:18:42,157 - Feishu - INFO - Starting Feishu WebSocket Client
+2025-08-22 00:18:42,157 - Feishu - INFO - App ID: cli_a82e2062ec79d00c
+2025-08-22 00:18:42,157 - Feishu - INFO - Event handler registered successfully
+2025-08-22 00:18:42,157 - Feishu - INFO - Starting WebSocket connection...
+2025-08-22 00:18:42,715 - Lark - INFO - connected to wss://msg-frontier.feishu.cn/ws/v2?fpid=493&aid=552564&device_id=7541074014073569282&access_key=a3723f05dd990fa3f8c8e90c58df76f6&service_id=33554678&ticket=8bdd6e49-c0ea-446c-b380-66eedba3e1ae [conn_id=7541074014073569282]
+2025-08-22 00:18:42,718 - Lark - DEBUG - ping success [conn_id=7541074014073569282]
+2025-08-22 00:18:42,790 - Lark - DEBUG - receive pong [conn_id=7541074014073569282]
+2025-08-22 00:18:50,335 - Lark - DEBUG - receive message, message_type: event, message_id: 1efcd23c-fd5b-48ca-b201-372a585e12dd, trace_id: 42d98d2c8a066f05b86d45b2dc3fd76e, payload: {"schema":"2.0","header":{"event_id":"42d98d2c8a066f05b86d45b2dc3fd76e","token":"","create_time":"1755793128922","event_type":"im.chat.access_event.bot_p2p_chat_entered_v1","tenant_key":"1bc11fe2489f175f","app_id":"cli_a82e2062ec79d00c"},"event":{"chat_id":"oc_4151e119655cc70501d1d7b6eb144689","last_message_create_time":"1755791072679","last_message_id":"om_x100b4547a0c4888c0f1dc6398ee63b3","operator_id":{"open_id":"ou_2f54b7d185b170a7db045cd0ad02185a","union_id":"on_21fcd99f23e1594eb2281ce43233776c","user_id":null}}} [conn_id=7541074014073569282]
+2025-08-22 00:19:00,229 - Lark - DEBUG - receive message, message_type: event, message_id: 32262caa-772b-4088-98e6-4b3af37a53f0, trace_id: 7c1ffa185d3c94e9b33e3c7fa0278643, payload: {"schema":"2.0","header":{"event_id":"7c1ffa185d3c94e9b33e3c7fa0278643","token":"","create_time":"1755793139008","event_type":"im.chat.access_event.bot_p2p_chat_entered_v1","tenant_key":"1bc11fe2489f175f","app_id":"cli_a82e2062ec79d00c"},"event":{"chat_id":"oc_4151e119655cc70501d1d7b6eb144689","last_message_create_time":"1755793134916","last_message_id":"om_x100b454020213ca80f1e0ca0e0bfe13","operator_id":{"open_id":"ou_2f54b7d185b170a7db045cd0ad02185a","union_id":"on_21fcd99f23e1594eb2281ce43233776c","user_id":null}}} [conn_id=7541074014073569282]
+2025-08-22 00:19:18,061 - Lark - DEBUG - receive message, message_type: event, message_id: 60978883-102d-4c51-a272-894cef90b289, trace_id: b79cf686b5a3fd2c80ec247c98aa970b, payload: {"schema":"2.0","header":{"event_id":"b79cf686b5a3fd2c80ec247c98aa970b","token":"","create_time":"1755793156775","event_type":"im.chat.access_event.bot_p2p_chat_entered_v1","tenant_key":"1bc11fe2489f175f","app_id":"cli_a82e2062ec79d00c"},"event":{"chat_id":"oc_4151e119655cc70501d1d7b6eb144689","last_message_create_time":"1755793134916","last_message_id":"om_x100b454020213ca80f1e0ca0e0bfe13","operator_id":{"open_id":"ou_2f54b7d185b170a7db045cd0ad02185a","union_id":"on_21fcd99f23e1594eb2281ce43233776c","user_id":null}}} [conn_id=7541074014073569282]
+2025-08-22 00:20:42,725 - Lark - DEBUG - ping success [conn_id=7541074014073569282]
+2025-08-22 00:20:42,813 - Lark - DEBUG - receive pong [conn_id=7541074014073569282]
+2025-08-22 00:22:06,786 - Lark - DEBUG - receive message, message_type: event, message_id: 89886a7a-3adc-4550-bc0d-de9f4bcecd67, trace_id: 1b5a27853299d2894ab0bb08584f44bc, payload: {"schema":"2.0","header":{"event_id":"1b5a27853299d2894ab0bb08584f44bc","token":"","create_time":"1755789409603","event_type":"im.chat.access_event.bot_p2p_chat_entered_v1","tenant_key":"1bc11fe2489f175f","app_id":"cli_a82e2062ec79d00c"},"event":{"chat_id":"oc_4151e119655cc70501d1d7b6eb144689","last_message_create_time":"1755788403326","last_message_id":"om_x100b454709fee48c0f1b79669a6ff61","operator_id":{"open_id":"ou_2f54b7d185b170a7db045cd0ad02185a","union_id":"on_21fcd99f23e1594eb2281ce43233776c","user_id":null}}} [conn_id=7541074014073569282]
+2025-08-22 00:22:22,120 - Lark - DEBUG - receive message, message_type: event, message_id: 19714543-77fb-4246-8f99-104e3a45f638, trace_id: 3388d018ef50f69916aacb8440c30153, payload: {"schema":"2.0","header":{"event_id":"3388d018ef50f69916aacb8440c30153","token":"","create_time":"1755789425974","event_type":"im.chat.access_event.bot_p2p_chat_entered_v1","tenant_key":"1bc11fe2489f175f","app_id":"cli_a82e2062ec79d00c"},"event":{"chat_id":"oc_4151e119655cc70501d1d7b6eb144689","last_message_create_time":"1755788403326","last_message_id":"om_x100b454709fee48c0f1b79669a6ff61","operator_id":{"open_id":"ou_2f54b7d185b170a7db045cd0ad02185a","union_id":"on_21fcd99f23e1594eb2281ce43233776c","user_id":null}}} [conn_id=7541074014073569282]
+2025-08-22 00:22:42,196 - Lark - DEBUG - receive message, message_type: event, message_id: 8081cd6b-96f8-44e2-93cf-90d58d38070c, trace_id: a5873888edc75af062b420a6cd9627e9, payload: {"schema":"2.0","header":{"event_id":"a5873888edc75af062b420a6cd9627e9","token":"","create_time":"1755789444378","event_type":"im.chat.access_event.bot_p2p_chat_entered_v1","tenant_key":"1bc11fe2489f175f","app_id":"cli_a82e2062ec79d00c"},"event":{"chat_id":"oc_4151e119655cc70501d1d7b6eb144689","last_message_create_time":"1755788403326","last_message_id":"om_x100b454709fee48c0f1b79669a6ff61","operator_id":{"open_id":"ou_2f54b7d185b170a7db045cd0ad02185a","union_id":"on_21fcd99f23e1594eb2281ce43233776c","user_id":null}}} [conn_id=7541074014073569282]
+2025-08-22 00:22:42,732 - Lark - DEBUG - ping success [conn_id=7541074014073569282]
+2025-08-22 00:22:42,862 - Lark - DEBUG - receive pong [conn_id=7541074014073569282]
+2025-08-22 00:23:35,843 - Feishu - INFO - Service interrupted by user
+2025-08-22 00:23:35,845 - Feishu - INFO - Feishu long connection service stopped
+2025-08-22 00:23:43,758 - Feishu - INFO - Starting Feishu Long Connection Service
+2025-08-22 00:23:43,758 - Feishu - INFO - Starting Feishu WebSocket Client
+2025-08-22 00:23:43,758 - Feishu - INFO - App ID: cli_a82e2062ec79d00c
+2025-08-22 00:23:43,758 - Feishu - INFO - Event handler registered successfully
+2025-08-22 00:23:43,758 - Feishu - INFO - Starting WebSocket connection...
+2025-08-22 00:23:44,353 - Lark - INFO - connected to wss://msg-frontier.feishu.cn/ws/v2?fpid=493&aid=552564&device_id=7541075312768401409&access_key=ed557da1a1aaf2b379e0fda9336d2c05&service_id=33554678&ticket=bbf26146-8964-44d4-8737-2695486c43d1 [conn_id=7541075312768401409]
+2025-08-22 00:23:44,354 - Lark - DEBUG - ping success [conn_id=7541075312768401409]
+2025-08-22 00:23:44,432 - Lark - DEBUG - receive pong [conn_id=7541075312768401409]
+2025-08-22 00:23:53,285 - Lark - DEBUG - receive message, message_type: event, message_id: 6c324b38-8f1e-4dde-bac9-e70a39c01bae, trace_id: 02148c4592aa3b374f7aae704d5abc1d, payload: {"schema":"2.0","header":{"event_id":"02148c4592aa3b374f7aae704d5abc1d","token":"","create_time":"1755793431870","event_type":"im.chat.access_event.bot_p2p_chat_entered_v1","tenant_key":"1bc11fe2489f175f","app_id":"cli_a82e2062ec79d00c"},"event":{"chat_id":"oc_4151e119655cc70501d1d7b6eb144689","last_message_create_time":"1755793134916","last_message_id":"om_x100b454020213ca80f1e0ca0e0bfe13","operator_id":{"open_id":"ou_2f54b7d185b170a7db045cd0ad02185a","union_id":"on_21fcd99f23e1594eb2281ce43233776c","user_id":null}}} [conn_id=7541075312768401409]
+2025-08-22 00:23:57,593 - Lark - DEBUG - receive message, message_type: event, message_id: 3d3f4bf9-169e-4348-b648-916bb3bbfb55, trace_id: ed5f84ebb36bb55a85cb53a7d9a0eda0, payload: {"schema":"2.0","header":{"event_id":"ed5f84ebb36bb55a85cb53a7d9a0eda0","token":"","create_time":"1755793437525","event_type":"im.message.receive_v1","tenant_key":"1bc11fe2489f175f","app_id":"cli_a82e2062ec79d00c"},"event":{"message":{"chat_id":"oc_4151e119655cc70501d1d7b6eb144689","chat_type":"p2p","content":"{\"text\":\"98\"}","create_time":"1755793437313","message_id":"om_x100b4540cf1efc840eccd1d8ceb83c6","message_type":"text","update_time":"1755793437313","user_agent":"Mozilla/5.0 (Linux; Android 15; V2324A Build/AP3A.240905.015.A2; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/132.0.6834.152 Mobile Safari/537.36 Lark/7.49.9 LarkLocale/zh_CN ChannelName/Feishu ttnet SDK-Version/7.49.18"},"sender":{"sender_id":{"open_id":"ou_2f54b7d185b170a7db045cd0ad02185a","union_id":"on_21fcd99f23e1594eb2281ce43233776c","user_id":null},"sender_type":"user","tenant_key":"1bc11fe2489f175f"}}} [conn_id=7541075312768401409]
+2025-08-22 00:23:57,596 - Feishu - INFO - Received message event: {
+    "schema": "2.0",
+    "header": {
+        "event_id": "ed5f84ebb36bb55a85cb53a7d9a0eda0",
+        "token": "",
+        "create_time": "1755793437525",
+        "event_type": "im.message.receive_v1",
+        "tenant_key": "1bc11fe2489f175f",
+        "app_id": "cli_a82e2062ec79d00c"
+    },
+    "event": {
+        "sender": {
+            "sender_id": {
+                "open_id": "ou_2f54b7d185b170a7db045cd0ad02185a",
+                "union_id": "on_21fcd99f23e1594eb2281ce43233776c"
+            },
+            "sender_type": "user",
+            "tenant_key": "1bc11fe2489f175f"
+        },
+        "message": {
+            "message_id": "om_x100b4540cf1efc840eccd1d8ceb83c6",
+            "create_time": "1755793437313",
+            "update_time": "1755793437313",
+            "chat_id": "oc_4151e119655cc70501d1d7b6eb144689",
+            "chat_type": "p2p",
+            "message_type": "text",
+            "content": "{\"text\":\"98\"}",
+            "user_agent": "Mozilla/5.0 (Linux; Android 15; V2324A Build/AP3A.240905.015.A2; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/132.0.6834.152 Mobile Safari/537.36 Lark/7.49.9 LarkLocale/zh_CN ChannelName/Feishu ttnet SDK-Version/7.49.18"
+        }
+    }
+}
+2025-08-22 00:23:57,597 - Feishu - INFO - Received text message from None in chat oc_4151e119655cc70501d1d7b6eb144689: 98
+2025-08-22 00:23:57,598 - Feishu - ERROR - Error processing text message: Cannot run the event loop while another loop is running
+Traceback (most recent call last):
+  File "/Users/junhui/code/python-code/feishu_agent/src/FeishuWebHook.py", line 125, in handle_message_receive_v1
+    loop.run_until_complete(
+  File "/Users/junhui/anaconda3/lib/python3.11/asyncio/base_events.py", line 629, in run_until_complete
+    self._check_running()
+  File "/Users/junhui/anaconda3/lib/python3.11/asyncio/base_events.py", line 590, in _check_running
+    raise RuntimeError(
+RuntimeError: Cannot run the event loop while another loop is running
+2025-08-22 00:24:27,197 - Feishu - INFO - Service interrupted by user
+2025-08-22 00:24:27,198 - Feishu - INFO - Feishu long connection service stopped
+2025-08-22 00:24:27,419 - asyncio - ERROR - Task was destroyed but it is pending!
+task: <Task pending name='Task-7' coro=<Client._ping_loop() running at /Users/junhui/Library/Caches/pypoetry/virtualenvs/feishu-langchain-7rb6YGWV-py3.11/lib/python3.11/site-packages/lark_oapi/ws/client.py:139> wait_for=<Future pending cb=[Task.task_wakeup()]>>
+2025-08-22 00:24:27,420 - asyncio - ERROR - Task was destroyed but it is pending!
+task: <Task cancelling name='Task-1' coro=<ExpiringCache._start_clear_cron() running at /Users/junhui/Library/Caches/pypoetry/virtualenvs/feishu-langchain-7rb6YGWV-py3.11/lib/python3.11/site-packages/lark_oapi/core/cache/expiring_cache.py:46> wait_for=<Future cancelled>>
+2025-08-22 00:24:27,420 - asyncio - ERROR - Task was destroyed but it is pending!
+task: <Task pending name='Task-4' coro=<WebSocketCommonProtocol.keepalive_ping() running at /Users/junhui/Library/Caches/pypoetry/virtualenvs/feishu-langchain-7rb6YGWV-py3.11/lib/python3.11/site-packages/websockets/legacy/protocol.py:1242> wait_for=<Future pending cb=[Task.task_wakeup()]>>
+2025-08-22 00:24:27,420 - asyncio - ERROR - Task was destroyed but it is pending!
+task: <Task pending name='Task-3' coro=<WebSocketCommonProtocol.transfer_data() running at /Users/junhui/Library/Caches/pypoetry/virtualenvs/feishu-langchain-7rb6YGWV-py3.11/lib/python3.11/site-packages/websockets/legacy/protocol.py:953> wait_for=<Future pending cb=[Task.task_wakeup()]> cb=[Task.task_wakeup(), _wait.<locals>._on_completion() at /Users/junhui/anaconda3/lib/python3.11/asyncio/tasks.py:509]>
+2025-08-22 00:24:27,420 - asyncio - ERROR - Task was destroyed but it is pending!
+task: <Task pending name='Task-5' coro=<WebSocketCommonProtocol.close_connection() running at /Users/junhui/Library/Caches/pypoetry/virtualenvs/feishu-langchain-7rb6YGWV-py3.11/lib/python3.11/site-packages/websockets/legacy/protocol.py:1287> wait_for=<Task pending name='Task-3' coro=<WebSocketCommonProtocol.transfer_data() running at /Users/junhui/Library/Caches/pypoetry/virtualenvs/feishu-langchain-7rb6YGWV-py3.11/lib/python3.11/site-packages/websockets/legacy/protocol.py:953> wait_for=<Future pending cb=[Task.task_wakeup()]> cb=[Task.task_wakeup(), _wait.<locals>._on_completion() at /Users/junhui/anaconda3/lib/python3.11/asyncio/tasks.py:509]>>
+2025-08-22 00:24:27,420 - asyncio - ERROR - Task was destroyed but it is pending!
+task: <Task pending name='Task-6' coro=<Client._receive_message_loop() running at /Users/junhui/Library/Caches/pypoetry/virtualenvs/feishu-langchain-7rb6YGWV-py3.11/lib/python3.11/site-packages/lark_oapi/ws/client.py:170> wait_for=<Future pending cb=[Task.task_wakeup()]>>
+2025-08-22 00:24:47,429 - Feishu - INFO - Starting Feishu Long Connection Service
+2025-08-22 00:24:47,429 - Feishu - INFO - Starting Feishu WebSocket Client
+2025-08-22 00:24:47,429 - Feishu - INFO - App ID: cli_a82e2062ec79d00c
+2025-08-22 00:24:47,429 - Feishu - INFO - Event handler registered successfully
+2025-08-22 00:24:47,429 - Feishu - INFO - Starting WebSocket connection...
+2025-08-22 00:24:48,258 - Lark - INFO - connected to wss://msg-frontier.feishu.cn/ws/v2?fpid=493&aid=552564&device_id=7541075571050119170&access_key=84b69fb4e5afd02427bb229f0af3c9e9&service_id=33554678&ticket=b3dda1e5-0d75-4ace-a027-52431ac1e58c [conn_id=7541075571050119170]
+2025-08-22 00:24:48,261 - Lark - DEBUG - ping success [conn_id=7541075571050119170]
+2025-08-22 00:24:48,358 - Lark - DEBUG - receive pong [conn_id=7541075571050119170]
+2025-08-22 00:24:54,668 - Lark - DEBUG - receive message, message_type: event, message_id: 94044d86-998f-41dd-9622-ecf20ce217e9, trace_id: 5946bff37cdaa707c0efa196b11821a5, payload: {"schema":"2.0","header":{"event_id":"5946bff37cdaa707c0efa196b11821a5","token":"","create_time":"1755793493463","event_type":"im.chat.access_event.bot_p2p_chat_entered_v1","tenant_key":"1bc11fe2489f175f","app_id":"cli_a82e2062ec79d00c"},"event":{"chat_id":"oc_4151e119655cc70501d1d7b6eb144689","last_message_create_time":"1755793437313","last_message_id":"om_x100b4540cf1efc840eccd1d8ceb83c6","operator_id":{"open_id":"ou_2f54b7d185b170a7db045cd0ad02185a","union_id":"on_21fcd99f23e1594eb2281ce43233776c","user_id":null}}} [conn_id=7541075571050119170]
+2025-08-22 00:25:01,479 - Lark - DEBUG - receive message, message_type: event, message_id: 03900c45-c74f-451f-a4ce-95495e52fd8e, trace_id: 2070d76a600c6b0ba697621f68619560, payload: {"schema":"2.0","header":{"event_id":"2070d76a600c6b0ba697621f68619560","token":"","create_time":"1755793501485","event_type":"im.message.receive_v1","tenant_key":"1bc11fe2489f175f","app_id":"cli_a82e2062ec79d00c"},"event":{"message":{"chat_id":"oc_4151e119655cc70501d1d7b6eb144689","chat_type":"p2p","content":"{\"text\":\"1\"}","create_time":"1755793501271","message_id":"om_x100b4540cb1f48900f2649e78fc9532","message_type":"text","update_time":"1755793501271","user_agent":"Mozilla/5.0 (Linux; Android 15; V2324A Build/AP3A.240905.015.A2; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/132.0.6834.152 Mobile Safari/537.36 Lark/7.49.9 LarkLocale/zh_CN ChannelName/Feishu ttnet SDK-Version/7.49.18"},"sender":{"sender_id":{"open_id":"ou_2f54b7d185b170a7db045cd0ad02185a","union_id":"on_21fcd99f23e1594eb2281ce43233776c","user_id":null},"sender_type":"user","tenant_key":"1bc11fe2489f175f"}}} [conn_id=7541075571050119170]
+2025-08-22 00:25:01,481 - Feishu - INFO - Received message event: {
+    "schema": "2.0",
+    "header": {
+        "event_id": "2070d76a600c6b0ba697621f68619560",
+        "token": "",
+        "create_time": "1755793501485",
+        "event_type": "im.message.receive_v1",
+        "tenant_key": "1bc11fe2489f175f",
+        "app_id": "cli_a82e2062ec79d00c"
+    },
+    "event": {
+        "sender": {
+            "sender_id": {
+                "open_id": "ou_2f54b7d185b170a7db045cd0ad02185a",
+                "union_id": "on_21fcd99f23e1594eb2281ce43233776c"
+            },
+            "sender_type": "user",
+            "tenant_key": "1bc11fe2489f175f"
+        },
+        "message": {
+            "message_id": "om_x100b4540cb1f48900f2649e78fc9532",
+            "create_time": "1755793501271",
+            "update_time": "1755793501271",
+            "chat_id": "oc_4151e119655cc70501d1d7b6eb144689",
+            "chat_type": "p2p",
+            "message_type": "text",
+            "content": "{\"text\":\"1\"}",
+            "user_agent": "Mozilla/5.0 (Linux; Android 15; V2324A Build/AP3A.240905.015.A2; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/132.0.6834.152 Mobile Safari/537.36 Lark/7.49.9 LarkLocale/zh_CN ChannelName/Feishu ttnet SDK-Version/7.49.18"
+        }
+    }
+}
+2025-08-22 00:25:01,482 - Feishu - INFO - Received text message from None in chat oc_4151e119655cc70501d1d7b6eb144689: 1
+2025-08-22 00:25:01,482 - Feishu - ERROR - Error processing text message: Cannot run the event loop while another loop is running
+Traceback (most recent call last):
+  File "/Users/junhui/code/python-code/feishu_agent/src/FeishuWebHook.py", line 125, in handle_message_receive_v1
+    loop.run_until_complete(
+  File "/Users/junhui/anaconda3/lib/python3.11/asyncio/base_events.py", line 629, in run_until_complete
+    self._check_running()
+  File "/Users/junhui/anaconda3/lib/python3.11/asyncio/base_events.py", line 590, in _check_running
+    raise RuntimeError(
+RuntimeError: Cannot run the event loop while another loop is running
+2025-08-22 00:26:21,861 - Feishu - INFO - Service interrupted by user
+2025-08-22 00:26:21,861 - Feishu - INFO - Feishu long connection service stopped
+2025-08-22 00:26:22,064 - asyncio - ERROR - Task was destroyed but it is pending!
+task: <Task pending name='Task-7' coro=<Client._ping_loop() running at /Users/junhui/Library/Caches/pypoetry/virtualenvs/feishu-langchain-7rb6YGWV-py3.11/lib/python3.11/site-packages/lark_oapi/ws/client.py:139> wait_for=<Future pending cb=[Task.task_wakeup()]>>
+2025-08-22 00:26:22,064 - asyncio - ERROR - Task was destroyed but it is pending!
+task: <Task cancelling name='Task-1' coro=<ExpiringCache._start_clear_cron() running at /Users/junhui/Library/Caches/pypoetry/virtualenvs/feishu-langchain-7rb6YGWV-py3.11/lib/python3.11/site-packages/lark_oapi/core/cache/expiring_cache.py:46> wait_for=<Future cancelled>>
+2025-08-22 00:26:22,065 - asyncio - ERROR - Task was destroyed but it is pending!
+task: <Task pending name='Task-4' coro=<WebSocketCommonProtocol.keepalive_ping() running at /Users/junhui/Library/Caches/pypoetry/virtualenvs/feishu-langchain-7rb6YGWV-py3.11/lib/python3.11/site-packages/websockets/legacy/protocol.py:1242> wait_for=<Future pending cb=[Task.task_wakeup()]>>
+2025-08-22 00:26:22,065 - asyncio - ERROR - Task was destroyed but it is pending!
+task: <Task pending name='Task-3' coro=<WebSocketCommonProtocol.transfer_data() running at /Users/junhui/Library/Caches/pypoetry/virtualenvs/feishu-langchain-7rb6YGWV-py3.11/lib/python3.11/site-packages/websockets/legacy/protocol.py:953> wait_for=<Future pending cb=[Task.task_wakeup()]> cb=[Task.task_wakeup(), _wait.<locals>._on_completion() at /Users/junhui/anaconda3/lib/python3.11/asyncio/tasks.py:509]>
+2025-08-22 00:26:22,065 - asyncio - ERROR - Task was destroyed but it is pending!
+task: <Task pending name='Task-5' coro=<WebSocketCommonProtocol.close_connection() running at /Users/junhui/Library/Caches/pypoetry/virtualenvs/feishu-langchain-7rb6YGWV-py3.11/lib/python3.11/site-packages/websockets/legacy/protocol.py:1287> wait_for=<Task pending name='Task-3' coro=<WebSocketCommonProtocol.transfer_data() running at /Users/junhui/Library/Caches/pypoetry/virtualenvs/feishu-langchain-7rb6YGWV-py3.11/lib/python3.11/site-packages/websockets/legacy/protocol.py:953> wait_for=<Future pending cb=[Task.task_wakeup()]> cb=[Task.task_wakeup(), _wait.<locals>._on_completion() at /Users/junhui/anaconda3/lib/python3.11/asyncio/tasks.py:509]>>
+2025-08-22 00:26:22,065 - asyncio - ERROR - Task was destroyed but it is pending!
+task: <Task pending name='Task-6' coro=<Client._receive_message_loop() running at /Users/junhui/Library/Caches/pypoetry/virtualenvs/feishu-langchain-7rb6YGWV-py3.11/lib/python3.11/site-packages/lark_oapi/ws/client.py:170> wait_for=<Future pending cb=[Task.task_wakeup()]>>
+2025-08-22 00:26:51,266 - Feishu - INFO - Starting Feishu Long Connection Service
+2025-08-22 00:26:51,266 - Feishu - INFO - Starting Feishu WebSocket Client
+2025-08-22 00:26:51,266 - Feishu - INFO - App ID: cli_a82e2062ec79d00c
+2025-08-22 00:26:51,266 - Feishu - INFO - Event handler registered successfully
+2025-08-22 00:26:51,266 - Feishu - INFO - Starting WebSocket connection...
+2025-08-22 00:26:52,614 - Lark - INFO - connected to wss://msg-frontier.feishu.cn/ws/v2?fpid=493&aid=552564&device_id=7541076106779639809&access_key=acab785d47e794de3112e807bfe87e91&service_id=33554678&ticket=61a9188b-4c53-4740-9b8a-6a7f731d7580 [conn_id=7541076106779639809]
+2025-08-22 00:26:52,615 - Lark - DEBUG - ping success [conn_id=7541076106779639809]
+2025-08-22 00:26:52,703 - Lark - DEBUG - receive pong [conn_id=7541076106779639809]
+2025-08-22 00:26:55,486 - Lark - DEBUG - receive message, message_type: event, message_id: 688f83cb-5d69-4dad-b0c5-fc3a3ed82701, trace_id: 780b67a1f5331de8da9a82d2bf9e678d, payload: {"schema":"2.0","header":{"event_id":"780b67a1f5331de8da9a82d2bf9e678d","token":"","create_time":"1755793613915","event_type":"im.chat.access_event.bot_p2p_chat_entered_v1","tenant_key":"1bc11fe2489f175f","app_id":"cli_a82e2062ec79d00c"},"event":{"chat_id":"oc_4151e119655cc70501d1d7b6eb144689","last_message_create_time":"1755793501271","last_message_id":"om_x100b4540cb1f48900f2649e78fc9532","operator_id":{"open_id":"ou_2f54b7d185b170a7db045cd0ad02185a","union_id":"on_21fcd99f23e1594eb2281ce43233776c","user_id":null}}} [conn_id=7541076106779639809]
+2025-08-22 00:27:00,092 - Lark - DEBUG - receive message, message_type: event, message_id: 93e1e26c-fcc4-4a4a-9e92-5dd8781adbec, trace_id: 6ad5aad67605fdfd4b1668467763b65b, payload: {"schema":"2.0","header":{"event_id":"6ad5aad67605fdfd4b1668467763b65b","token":"","create_time":"1755793619914","event_type":"im.message.receive_v1","tenant_key":"1bc11fe2489f175f","app_id":"cli_a82e2062ec79d00c"},"event":{"message":{"chat_id":"oc_4151e119655cc70501d1d7b6eb144689","chat_type":"p2p","content":"{\"text\":\"69\"}","create_time":"1755793619625","message_id":"om_x100b4540c3f5fcac0f2cd9548002e46","message_type":"text","update_time":"1755793619625","user_agent":"Mozilla/5.0 (Linux; Android 15; V2324A Build/AP3A.240905.015.A2; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/132.0.6834.152 Mobile Safari/537.36 Lark/7.49.9 LarkLocale/zh_CN ChannelName/Feishu ttnet SDK-Version/7.49.18"},"sender":{"sender_id":{"open_id":"ou_2f54b7d185b170a7db045cd0ad02185a","union_id":"on_21fcd99f23e1594eb2281ce43233776c","user_id":null},"sender_type":"user","tenant_key":"1bc11fe2489f175f"}}} [conn_id=7541076106779639809]
+2025-08-22 00:27:00,092 - Feishu - INFO - Received message event: {
+    "schema": "2.0",
+    "header": {
+        "event_id": "6ad5aad67605fdfd4b1668467763b65b",
+        "token": "",
+        "create_time": "1755793619914",
+        "event_type": "im.message.receive_v1",
+        "tenant_key": "1bc11fe2489f175f",
+        "app_id": "cli_a82e2062ec79d00c"
+    },
+    "event": {
+        "sender": {
+            "sender_id": {
+                "open_id": "ou_2f54b7d185b170a7db045cd0ad02185a",
+                "union_id": "on_21fcd99f23e1594eb2281ce43233776c"
+            },
+            "sender_type": "user",
+            "tenant_key": "1bc11fe2489f175f"
+        },
+        "message": {
+            "message_id": "om_x100b4540c3f5fcac0f2cd9548002e46",
+            "create_time": "1755793619625",
+            "update_time": "1755793619625",
+            "chat_id": "oc_4151e119655cc70501d1d7b6eb144689",
+            "chat_type": "p2p",
+            "message_type": "text",
+            "content": "{\"text\":\"69\"}",
+            "user_agent": "Mozilla/5.0 (Linux; Android 15; V2324A Build/AP3A.240905.015.A2; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/132.0.6834.152 Mobile Safari/537.36 Lark/7.49.9 LarkLocale/zh_CN ChannelName/Feishu ttnet SDK-Version/7.49.18"
+        }
+    }
+}
+2025-08-22 00:28:23,111 - Feishu - INFO - Service interrupted by user
+2025-08-22 00:28:23,111 - Feishu - INFO - Feishu long connection service stopped
+2025-08-22 00:28:29,749 - Feishu - INFO - Starting Feishu Long Connection Service
+2025-08-22 00:28:29,749 - Feishu - INFO - Starting Feishu WebSocket Client
+2025-08-22 00:28:29,749 - Feishu - INFO - App ID: cli_a82e2062ec79d00c
+2025-08-22 00:28:29,749 - Feishu - INFO - Event handler registered successfully
+2025-08-22 00:28:29,749 - Feishu - INFO - Starting WebSocket connection...
+2025-08-22 00:28:30,530 - Lark - INFO - connected to wss://msg-frontier.feishu.cn/ws/v2?fpid=493&aid=552564&device_id=7541076537649020929&access_key=c70b567094365f50202548655b515c09&service_id=33554678&ticket=1710ed36-054c-4866-a1d3-1f1a50a5eed3 [conn_id=7541076537649020929]
+2025-08-22 00:28:30,531 - Lark - DEBUG - ping success [conn_id=7541076537649020929]
+2025-08-22 00:28:30,706 - Lark - DEBUG - receive pong [conn_id=7541076537649020929]
+2025-08-22 00:28:33,967 - Lark - DEBUG - receive message, message_type: event, message_id: ee838379-0c45-46fa-9920-a6d5837cd3a7, trace_id: 3173cd1df8b071884e1b27eb106746f9, payload: {"schema":"2.0","header":{"event_id":"3173cd1df8b071884e1b27eb106746f9","token":"","create_time":"1755793712720","event_type":"im.chat.access_event.bot_p2p_chat_entered_v1","tenant_key":"1bc11fe2489f175f","app_id":"cli_a82e2062ec79d00c"},"event":{"chat_id":"oc_4151e119655cc70501d1d7b6eb144689","last_message_create_time":"1755793619625","last_message_id":"om_x100b4540c3f5fcac0f2cd9548002e46","operator_id":{"open_id":"ou_2f54b7d185b170a7db045cd0ad02185a","union_id":"on_21fcd99f23e1594eb2281ce43233776c","user_id":null}}} [conn_id=7541076537649020929]
+2025-08-22 00:28:39,857 - Lark - DEBUG - receive message, message_type: event, message_id: ef26a2ca-5eea-4fa7-a805-1a3972794327, trace_id: 9eea33bd6016c763cafb3c635f5d884f, payload: {"schema":"2.0","header":{"event_id":"9eea33bd6016c763cafb3c635f5d884f","token":"","create_time":"1755793719792","event_type":"im.message.receive_v1","tenant_key":"1bc11fe2489f175f","app_id":"cli_a82e2062ec79d00c"},"event":{"message":{"chat_id":"oc_4151e119655cc70501d1d7b6eb144689","chat_type":"p2p","content":"{\"text\":\"11\"}","create_time":"1755793719514","message_id":"om_x100b4540ddbb20a80f2f34f5f9061d4","message_type":"text","update_time":"1755793719514","user_agent":"Mozilla/5.0 (Linux; Android 15; V2324A Build/AP3A.240905.015.A2; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/132.0.6834.152 Mobile Safari/537.36 Lark/7.49.9 LarkLocale/zh_CN ChannelName/Feishu ttnet SDK-Version/7.49.18"},"sender":{"sender_id":{"open_id":"ou_2f54b7d185b170a7db045cd0ad02185a","union_id":"on_21fcd99f23e1594eb2281ce43233776c","user_id":null},"sender_type":"user","tenant_key":"1bc11fe2489f175f"}}} [conn_id=7541076537649020929]
+2025-08-22 00:28:39,860 - Feishu - INFO - Received message event: {
+    "schema": "2.0",
+    "header": {
+        "event_id": "9eea33bd6016c763cafb3c635f5d884f",
+        "token": "",
+        "create_time": "1755793719792",
+        "event_type": "im.message.receive_v1",
+        "tenant_key": "1bc11fe2489f175f",
+        "app_id": "cli_a82e2062ec79d00c"
+    },
+    "event": {
+        "sender": {
+            "sender_id": {
+                "open_id": "ou_2f54b7d185b170a7db045cd0ad02185a",
+                "union_id": "on_21fcd99f23e1594eb2281ce43233776c"
+            },
+            "sender_type": "user",
+            "tenant_key": "1bc11fe2489f175f"
+        },
+        "message": {
+            "message_id": "om_x100b4540ddbb20a80f2f34f5f9061d4",
+            "create_time": "1755793719514",
+            "update_time": "1755793719514",
+            "chat_id": "oc_4151e119655cc70501d1d7b6eb144689",
+            "chat_type": "p2p",
+            "message_type": "text",
+            "content": "{\"text\":\"11\"}",
+            "user_agent": "Mozilla/5.0 (Linux; Android 15; V2324A Build/AP3A.240905.015.A2; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/132.0.6834.152 Mobile Safari/537.36 Lark/7.49.9 LarkLocale/zh_CN ChannelName/Feishu ttnet SDK-Version/7.49.18"
+        }
+    }
+}
+2025-08-22 00:28:39,860 - Feishu - INFO - Received text message from None in chat oc_4151e119655cc70501d1d7b6eb144689: 11
+2025-08-22 00:28:39,861 - Feishu - ERROR - Error processing text message: Cannot run the event loop while another loop is running
+Traceback (most recent call last):
+  File "/Users/junhui/code/python-code/feishu_agent/src/FeishuWebHook.py", line 126, in handle_message_receive_v1
+    loop.run_until_complete(
+  File "/Users/junhui/anaconda3/lib/python3.11/asyncio/base_events.py", line 629, in run_until_complete
+    self._check_running()
+  File "/Users/junhui/anaconda3/lib/python3.11/asyncio/base_events.py", line 590, in _check_running
+    raise RuntimeError(
+RuntimeError: Cannot run the event loop while another loop is running
+2025-08-22 00:30:30,533 - Lark - DEBUG - ping success [conn_id=7541076537649020929]
+2025-08-22 00:30:30,609 - Lark - DEBUG - receive pong [conn_id=7541076537649020929]
+2025-08-22 00:32:30,536 - Lark - DEBUG - ping success [conn_id=7541076537649020929]
+2025-08-22 00:32:30,606 - Lark - DEBUG - receive pong [conn_id=7541076537649020929]
+2025-08-22 00:32:53,029 - Feishu - INFO - Service interrupted by user
+2025-08-22 00:32:53,029 - Feishu - INFO - Feishu long connection service stopped
+2025-08-22 00:32:53,232 - asyncio - ERROR - Task was destroyed but it is pending!
+task: <Task pending name='Task-1' coro=<ExpiringCache._start_clear_cron() running at /Users/junhui/Library/Caches/pypoetry/virtualenvs/feishu-langchain-7rb6YGWV-py3.11/lib/python3.11/site-packages/lark_oapi/core/cache/expiring_cache.py:46> wait_for=<Future pending cb=[Task.task_wakeup()]>>
+2025-08-22 00:32:53,233 - asyncio - ERROR - Task was destroyed but it is pending!
+task: <Task pending name='Task-7' coro=<Client._ping_loop() running at /Users/junhui/Library/Caches/pypoetry/virtualenvs/feishu-langchain-7rb6YGWV-py3.11/lib/python3.11/site-packages/lark_oapi/ws/client.py:139> wait_for=<Future pending cb=[Task.task_wakeup()]>>
+2025-08-22 00:32:53,233 - asyncio - ERROR - Task was destroyed but it is pending!
+task: <Task pending name='Task-4' coro=<WebSocketCommonProtocol.keepalive_ping() running at /Users/junhui/Library/Caches/pypoetry/virtualenvs/feishu-langchain-7rb6YGWV-py3.11/lib/python3.11/site-packages/websockets/legacy/protocol.py:1242> wait_for=<Future pending cb=[Task.task_wakeup()]>>
+2025-08-22 00:32:53,233 - asyncio - ERROR - Task was destroyed but it is pending!
+task: <Task pending name='Task-3' coro=<WebSocketCommonProtocol.transfer_data() running at /Users/junhui/Library/Caches/pypoetry/virtualenvs/feishu-langchain-7rb6YGWV-py3.11/lib/python3.11/site-packages/websockets/legacy/protocol.py:953> wait_for=<Future pending cb=[Task.task_wakeup()]> cb=[Task.task_wakeup(), _wait.<locals>._on_completion() at /Users/junhui/anaconda3/lib/python3.11/asyncio/tasks.py:509]>
+2025-08-22 00:32:53,233 - asyncio - ERROR - Task was destroyed but it is pending!
+task: <Task pending name='Task-5' coro=<WebSocketCommonProtocol.close_connection() running at /Users/junhui/Library/Caches/pypoetry/virtualenvs/feishu-langchain-7rb6YGWV-py3.11/lib/python3.11/site-packages/websockets/legacy/protocol.py:1287> wait_for=<Task pending name='Task-3' coro=<WebSocketCommonProtocol.transfer_data() running at /Users/junhui/Library/Caches/pypoetry/virtualenvs/feishu-langchain-7rb6YGWV-py3.11/lib/python3.11/site-packages/websockets/legacy/protocol.py:953> wait_for=<Future pending cb=[Task.task_wakeup()]> cb=[Task.task_wakeup(), _wait.<locals>._on_completion() at /Users/junhui/anaconda3/lib/python3.11/asyncio/tasks.py:509]>>
+2025-08-22 00:32:53,233 - asyncio - ERROR - Task was destroyed but it is pending!
+task: <Task pending name='Task-6' coro=<Client._receive_message_loop() running at /Users/junhui/Library/Caches/pypoetry/virtualenvs/feishu-langchain-7rb6YGWV-py3.11/lib/python3.11/site-packages/lark_oapi/ws/client.py:170> wait_for=<Future pending cb=[Task.task_wakeup()]>>
+2025-08-22 00:32:57,408 - Feishu - INFO - Starting Feishu Long Connection Service
+2025-08-22 00:32:57,408 - Feishu - INFO - Starting Feishu WebSocket Client
+2025-08-22 00:32:57,408 - Feishu - INFO - App ID: cli_a82e2062ec79d00c
+2025-08-22 00:32:57,408 - Feishu - INFO - Event handler registered successfully
+2025-08-22 00:32:57,409 - Feishu - INFO - Starting WebSocket connection...
+2025-08-22 00:32:58,427 - Lark - INFO - connected to wss://msg-frontier.feishu.cn/ws/v2?fpid=493&aid=552564&device_id=7541077668059987996&access_key=ef63e93b90b33b9938257c34d09777be&service_id=33554678&ticket=86733937-3f3c-4ea0-9206-fd92c44c0798 [conn_id=7541077668059987996]
+2025-08-22 00:32:58,428 - Lark - DEBUG - ping success [conn_id=7541077668059987996]
+2025-08-22 00:32:58,654 - Lark - DEBUG - receive pong [conn_id=7541077668059987996]
+2025-08-22 00:33:01,101 - Lark - DEBUG - receive message, message_type: event, message_id: 0a078651-7d40-4cd0-b164-58fb234393e3, trace_id: e00e3057c58bbd137e64ff756c3258e9, payload: {"schema":"2.0","header":{"event_id":"e00e3057c58bbd137e64ff756c3258e9","token":"","create_time":"1755793979806","event_type":"im.chat.access_event.bot_p2p_chat_entered_v1","tenant_key":"1bc11fe2489f175f","app_id":"cli_a82e2062ec79d00c"},"event":{"chat_id":"oc_4151e119655cc70501d1d7b6eb144689","last_message_create_time":"1755793719514","last_message_id":"om_x100b4540ddbb20a80f2f34f5f9061d4","operator_id":{"open_id":"ou_2f54b7d185b170a7db045cd0ad02185a","union_id":"on_21fcd99f23e1594eb2281ce43233776c","user_id":null}}} [conn_id=7541077668059987996]
+2025-08-22 00:33:05,618 - Lark - DEBUG - receive message, message_type: event, message_id: 81a8027f-7244-49fb-b23d-e410f4ccde10, trace_id: d8cdf76073ecde8f5357a073cae77fbb, payload: {"schema":"2.0","header":{"event_id":"d8cdf76073ecde8f5357a073cae77fbb","token":"","create_time":"1755793985422","event_type":"im.message.receive_v1","tenant_key":"1bc11fe2489f175f","app_id":"cli_a82e2062ec79d00c"},"event":{"message":{"chat_id":"oc_4151e119655cc70501d1d7b6eb144689","chat_type":"p2p","content":"{\"text\":\"698\"}","create_time":"1755793985143","message_id":"om_x100b4540eadd3c800f15c00a8e4fdf5","message_type":"text","update_time":"1755793985143","user_agent":"Mozilla/5.0 (Linux; Android 15; V2324A Build/AP3A.240905.015.A2; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/132.0.6834.152 Mobile Safari/537.36 Lark/7.49.9 LarkLocale/zh_CN ChannelName/Feishu ttnet SDK-Version/7.49.18"},"sender":{"sender_id":{"open_id":"ou_2f54b7d185b170a7db045cd0ad02185a","union_id":"on_21fcd99f23e1594eb2281ce43233776c","user_id":null},"sender_type":"user","tenant_key":"1bc11fe2489f175f"}}} [conn_id=7541077668059987996]
+2025-08-22 00:33:05,620 - Feishu - INFO - Received message event: {
+    "schema": "2.0",
+    "header": {
+        "event_id": "d8cdf76073ecde8f5357a073cae77fbb",
+        "token": "",
+        "create_time": "1755793985422",
+        "event_type": "im.message.receive_v1",
+        "tenant_key": "1bc11fe2489f175f",
+        "app_id": "cli_a82e2062ec79d00c"
+    },
+    "event": {
+        "sender": {
+            "sender_id": {
+                "open_id": "ou_2f54b7d185b170a7db045cd0ad02185a",
+                "union_id": "on_21fcd99f23e1594eb2281ce43233776c"
+            },
+            "sender_type": "user",
+            "tenant_key": "1bc11fe2489f175f"
+        },
+        "message": {
+            "message_id": "om_x100b4540eadd3c800f15c00a8e4fdf5",
+            "create_time": "1755793985143",
+            "update_time": "1755793985143",
+            "chat_id": "oc_4151e119655cc70501d1d7b6eb144689",
+            "chat_type": "p2p",
+            "message_type": "text",
+            "content": "{\"text\":\"698\"}",
+            "user_agent": "Mozilla/5.0 (Linux; Android 15; V2324A Build/AP3A.240905.015.A2; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/132.0.6834.152 Mobile Safari/537.36 Lark/7.49.9 LarkLocale/zh_CN ChannelName/Feishu ttnet SDK-Version/7.49.18"
+        }
+    }
+}
+2025-08-22 00:33:05,621 - Feishu - INFO - Received text message from None in chat oc_4151e119655cc70501d1d7b6eb144689: 698
+2025-08-22 00:33:05,621 - Feishu - INFO - Processing message from oc_4151e119655cc70501d1d7b6eb144689: 698
+2025-08-22 00:33:09,714 - httpx - INFO - HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 400 Bad Request"
+2025-08-22 00:33:09,719 - Feishu - ERROR - Error processing message: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "/Users/junhui/code/python-code/feishu_agent/src/FeishuWebHook.py", line 52, in process_message_async
+    response = AgentClass().run_agent(message_text)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/junhui/code/python-code/feishu_agent/src/Agents.py", line 56, in run_agent
+    self.prompt = PromptClass(memorykey=self.memorykey,feeling=self.feeling).Prompt_Structure()
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/junhui/code/python-code/feishu_agent/src/Prompt.py", line 76, in Prompt_Structure
+    feeling = self.feeling if self.feeling["feeling"] in self.MOODS else {"feeling":"default","score":5}
+                              ~~~~~~~~~~~~^^^^^^^^^^^
+TypeError: 'NoneType' object is not subscriptable
+2025-08-22 00:33:31,120 - Feishu - INFO - Service interrupted by user
+2025-08-22 00:33:31,120 - Feishu - INFO - Feishu long connection service stopped
+2025-08-22 10:27:22,173 - Feishu - INFO - Starting Feishu Long Connection Service
+2025-08-22 10:27:22,174 - Feishu - INFO - Starting Feishu WebSocket Client
+2025-08-22 10:27:22,174 - Feishu - INFO - App ID: cli_a82e2062ec79d00c
+2025-08-22 10:27:22,174 - Feishu - INFO - Event handler registered successfully
+2025-08-22 10:27:22,174 - Feishu - INFO - Starting WebSocket connection...
+2025-08-22 10:27:24,070 - Lark - INFO - connected to wss://msg-frontier.feishu.cn/ws/v2?fpid=493&aid=552564&device_id=7541230418992742403&access_key=abdf5e97d0b11790c48a71fcde581fac&service_id=33554678&ticket=9f7ea261-6438-4618-9776-ac07004aa382 [conn_id=7541230418992742403]
+2025-08-22 10:27:24,075 - Lark - DEBUG - ping success [conn_id=7541230418992742403]
+2025-08-22 10:27:24,163 - Lark - DEBUG - receive pong [conn_id=7541230418992742403]
+2025-08-22 10:27:29,889 - Lark - DEBUG - receive message, message_type: event, message_id: 271be9d8-2a90-4c80-9d5b-e2e8450b64fa, trace_id: 2a58aa4b0bd255ad51f6f93b25ba37b2, payload: {"schema":"2.0","header":{"event_id":"2a58aa4b0bd255ad51f6f93b25ba37b2","token":"","create_time":"1755829648491","event_type":"im.chat.access_event.bot_p2p_chat_entered_v1","tenant_key":"1bc11fe2489f175f","app_id":"cli_a82e2062ec79d00c"},"event":{"chat_id":"oc_4151e119655cc70501d1d7b6eb144689","last_message_create_time":"1755793985143","last_message_id":"om_x100b4540eadd3c800f15c00a8e4fdf5","operator_id":{"open_id":"ou_2f54b7d185b170a7db045cd0ad02185a","union_id":"on_21fcd99f23e1594eb2281ce43233776c","user_id":null}}} [conn_id=7541230418992742403]
+2025-08-22 10:27:36,310 - Lark - DEBUG - receive message, message_type: event, message_id: 412a0327-d215-4220-ac61-27a716690b3a, trace_id: 6f8e0fe42635de2125b994a11031d588, payload: {"schema":"2.0","header":{"event_id":"6f8e0fe42635de2125b994a11031d588","token":"","create_time":"1755829656197","event_type":"im.message.receive_v1","tenant_key":"1bc11fe2489f175f","app_id":"cli_a82e2062ec79d00c"},"event":{"message":{"chat_id":"oc_4151e119655cc70501d1d7b6eb144689","chat_type":"p2p","content":"{\"text\":\"见鬼\"}","create_time":"1755829655868","message_id":"om_x100b454917b690dc0f3aa586a824cee","message_type":"text","update_time":"1755829655868","user_agent":"Mozilla/5.0 (Linux; Android 15; V2324A Build/AP3A.240905.015.A2; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/132.0.6834.152 Mobile Safari/537.36 Lark/7.49.9 LarkLocale/zh_CN ChannelName/Feishu ttnet SDK-Version/7.49.18"},"sender":{"sender_id":{"open_id":"ou_2f54b7d185b170a7db045cd0ad02185a","union_id":"on_21fcd99f23e1594eb2281ce43233776c","user_id":null},"sender_type":"user","tenant_key":"1bc11fe2489f175f"}}} [conn_id=7541230418992742403]
+2025-08-22 10:27:36,313 - Feishu - INFO - Received message event: {
+    "schema": "2.0",
+    "header": {
+        "event_id": "6f8e0fe42635de2125b994a11031d588",
+        "token": "",
+        "create_time": "1755829656197",
+        "event_type": "im.message.receive_v1",
+        "tenant_key": "1bc11fe2489f175f",
+        "app_id": "cli_a82e2062ec79d00c"
+    },
+    "event": {
+        "sender": {
+            "sender_id": {
+                "open_id": "ou_2f54b7d185b170a7db045cd0ad02185a",
+                "union_id": "on_21fcd99f23e1594eb2281ce43233776c"
+            },
+            "sender_type": "user",
+            "tenant_key": "1bc11fe2489f175f"
+        },
+        "message": {
+            "message_id": "om_x100b454917b690dc0f3aa586a824cee",
+            "create_time": "1755829655868",
+            "update_time": "1755829655868",
+            "chat_id": "oc_4151e119655cc70501d1d7b6eb144689",
+            "chat_type": "p2p",
+            "message_type": "text",
+            "content": "{\"text\":\"见鬼\"}",
+            "user_agent": "Mozilla/5.0 (Linux; Android 15; V2324A Build/AP3A.240905.015.A2; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/132.0.6834.152 Mobile Safari/537.36 Lark/7.49.9 LarkLocale/zh_CN ChannelName/Feishu ttnet SDK-Version/7.49.18"
+        }
+    }
+}
+2025-08-22 10:27:36,314 - Feishu - INFO - Received text message from None in chat oc_4151e119655cc70501d1d7b6eb144689: 见鬼
+2025-08-22 10:27:36,314 - Feishu - INFO - Processing message from oc_4151e119655cc70501d1d7b6eb144689: 见鬼
+2025-08-22 10:27:39,748 - httpx - INFO - HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 400 Bad Request"
+2025-08-22 10:27:39,751 - Feishu - ERROR - Error processing message: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "/Users/junhui/code/python-code/feishu_agent/src/FeishuWebHook.py", line 52, in process_message_async
+    response = AgentClass().run_agent(message_text)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/junhui/code/python-code/feishu_agent/src/Agents.py", line 56, in run_agent
+    self.prompt = PromptClass(memorykey=self.memorykey,feeling=self.feeling).Prompt_Structure()
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/junhui/code/python-code/feishu_agent/src/Prompt.py", line 76, in Prompt_Structure
+    feeling = self.feeling if self.feeling["feeling"] in self.MOODS else {"feeling":"default","score":5}
+                              ~~~~~~~~~~~~^^^^^^^^^^^
+TypeError: 'NoneType' object is not subscriptable
+2025-08-22 10:29:24,076 - Lark - DEBUG - ping success [conn_id=7541230418992742403]
+2025-08-22 10:29:24,131 - Lark - DEBUG - receive pong [conn_id=7541230418992742403]
+2025-08-22 10:31:24,081 - Lark - DEBUG - ping success [conn_id=7541230418992742403]
+2025-08-22 10:31:24,134 - Lark - DEBUG - receive pong [conn_id=7541230418992742403]
+2025-08-22 10:35:09,979 - Feishu - INFO - Starting Feishu Long Connection Service
+2025-08-22 10:35:09,979 - Feishu - INFO - Starting Feishu WebSocket Client
+2025-08-22 10:35:09,979 - Feishu - INFO - App ID: cli_a82e2062ec79d00c
+2025-08-22 10:35:09,979 - Feishu - INFO - Event handler registered successfully
+2025-08-22 10:35:09,979 - Feishu - INFO - Starting WebSocket connection...
+2025-08-22 10:35:12,780 - Lark - INFO - connected to wss://msg-frontier.feishu.cn/ws/v2?fpid=493&aid=552564&device_id=7541232566263824387&access_key=34d1b3261352ec40344f30343d5eed85&service_id=33554678&ticket=89f62e24-e45b-47b9-b884-701e51d6b440 [conn_id=7541232566263824387]
+2025-08-22 10:35:12,780 - Lark - DEBUG - ping success [conn_id=7541232566263824387]
+2025-08-22 10:35:13,165 - Lark - DEBUG - receive pong [conn_id=7541232566263824387]
+2025-08-22 10:37:08,920 - Lark - DEBUG - receive message, message_type: event, message_id: 49dcd4f3-d407-47f4-90bf-eec65404cfca, trace_id: 5b293810e1a735ec93f150c12b8be1f3, payload: {"schema":"2.0","header":{"event_id":"5b293810e1a735ec93f150c12b8be1f3","token":"","create_time":"1755830227458","event_type":"im.chat.access_event.bot_p2p_chat_entered_v1","tenant_key":"1bc11fe2489f175f","app_id":"cli_a82e2062ec79d00c"},"event":{"chat_id":"oc_4151e119655cc70501d1d7b6eb144689","last_message_create_time":"1755829655868","last_message_id":"om_x100b454917b690dc0f3aa586a824cee","operator_id":{"open_id":"ou_2f54b7d185b170a7db045cd0ad02185a","union_id":"on_21fcd99f23e1594eb2281ce43233776c","user_id":null}}} [conn_id=7541232566263824387]
+2025-08-22 10:37:12,783 - Lark - DEBUG - ping success [conn_id=7541232566263824387]
+2025-08-22 10:37:13,169 - Lark - DEBUG - receive pong [conn_id=7541232566263824387]
+2025-08-22 10:37:13,784 - Lark - DEBUG - receive message, message_type: event, message_id: b1eb5962-8e6c-4161-a99e-cf05cb990b90, trace_id: 8b13ef82d40b9a283a95e64b61149a7b, payload: {"schema":"2.0","header":{"event_id":"8b13ef82d40b9a283a95e64b61149a7b","token":"","create_time":"1755830233567","event_type":"im.message.receive_v1","tenant_key":"1bc11fe2489f175f","app_id":"cli_a82e2062ec79d00c"},"event":{"message":{"chat_id":"oc_4151e119655cc70501d1d7b6eb144689","chat_type":"p2p","content":"{\"text\":\"123\"}","create_time":"1755830233181","message_id":"om_x100b4549335de0b80f3dc291615afd5","message_type":"text","update_time":"1755830233181","user_agent":"Mozilla/5.0 (Linux; Android 15; V2324A Build/AP3A.240905.015.A2; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/132.0.6834.152 Mobile Safari/537.36 Lark/7.49.9 LarkLocale/zh_CN ChannelName/Feishu ttnet SDK-Version/7.49.18"},"sender":{"sender_id":{"open_id":"ou_2f54b7d185b170a7db045cd0ad02185a","union_id":"on_21fcd99f23e1594eb2281ce43233776c","user_id":null},"sender_type":"user","tenant_key":"1bc11fe2489f175f"}}} [conn_id=7541232566263824387]
+2025-08-22 10:37:13,786 - Feishu - INFO - Received message event: {
+    "schema": "2.0",
+    "header": {
+        "event_id": "8b13ef82d40b9a283a95e64b61149a7b",
+        "token": "",
+        "create_time": "1755830233567",
+        "event_type": "im.message.receive_v1",
+        "tenant_key": "1bc11fe2489f175f",
+        "app_id": "cli_a82e2062ec79d00c"
+    },
+    "event": {
+        "sender": {
+            "sender_id": {
+                "open_id": "ou_2f54b7d185b170a7db045cd0ad02185a",
+                "union_id": "on_21fcd99f23e1594eb2281ce43233776c"
+            },
+            "sender_type": "user",
+            "tenant_key": "1bc11fe2489f175f"
+        },
+        "message": {
+            "message_id": "om_x100b4549335de0b80f3dc291615afd5",
+            "create_time": "1755830233181",
+            "update_time": "1755830233181",
+            "chat_id": "oc_4151e119655cc70501d1d7b6eb144689",
+            "chat_type": "p2p",
+            "message_type": "text",
+            "content": "{\"text\":\"123\"}",
+            "user_agent": "Mozilla/5.0 (Linux; Android 15; V2324A Build/AP3A.240905.015.A2; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/132.0.6834.152 Mobile Safari/537.36 Lark/7.49.9 LarkLocale/zh_CN ChannelName/Feishu ttnet SDK-Version/7.49.18"
+        }
+    }
+}
+2025-08-22 10:37:13,787 - Feishu - INFO - Received text message from None in chat oc_4151e119655cc70501d1d7b6eb144689: 123
+2025-08-22 10:37:13,787 - Feishu - INFO - Processing message from oc_4151e119655cc70501d1d7b6eb144689: 123
+2025-08-22 10:37:15,439 - httpx - INFO - HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 400 Bad Request"
+2025-08-22 10:37:15,442 - Feishu - ERROR - Error processing message: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "/Users/junhui/code/python-code/feishu_agent/src/FeishuWebHook.py", line 52, in process_message_async
+    response = AgentClass().run_agent(message_text)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/junhui/code/python-code/feishu_agent/src/Agents.py", line 56, in run_agent
+    self.prompt = PromptClass(memorykey=self.memorykey,feeling=self.feeling).Prompt_Structure()
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/junhui/code/python-code/feishu_agent/src/Prompt.py", line 76, in Prompt_Structure
+    feeling = self.feeling if self.feeling["feeling"] in self.MOODS else {"feeling":"default","score":5}
+                              ~~~~~~~~~~~~^^^^^^^^^^^
+TypeError: 'NoneType' object is not subscriptable
+2025-08-22 10:38:45,155 - Feishu - INFO - Service interrupted by user
+2025-08-22 10:38:45,157 - Feishu - INFO - Feishu long connection service stopped
+2025-08-22 10:38:50,395 - Feishu - INFO - Starting Feishu Long Connection Service
+2025-08-22 10:38:50,395 - Feishu - INFO - Starting Feishu WebSocket Client
+2025-08-22 10:38:50,395 - Feishu - INFO - App ID: cli_a82e2062ec79d00c
+2025-08-22 10:38:50,395 - Feishu - INFO - Event handler registered successfully
+2025-08-22 10:38:50,395 - Feishu - INFO - Starting WebSocket connection...
+2025-08-22 10:38:55,408 - Lark - ERROR - connect failed, err: HTTPSConnectionPool(host='open.feishu.cn', port=443): Max retries exceeded with url: /callback/ws/endpoint (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1006)')))
+2025-08-22 10:39:07,179 - Feishu - INFO - Service interrupted by user
+2025-08-22 10:39:07,180 - Feishu - INFO - Feishu long connection service stopped
+2025-08-22 10:39:12,471 - Feishu - INFO - Starting Feishu Long Connection Service
+2025-08-22 10:39:12,471 - Feishu - INFO - Starting Feishu WebSocket Client
+2025-08-22 10:39:12,471 - Feishu - INFO - App ID: cli_a82e2062ec79d00c
+2025-08-22 10:39:12,471 - Feishu - INFO - Event handler registered successfully
+2025-08-22 10:39:12,471 - Feishu - INFO - Starting WebSocket connection...
+2025-08-22 10:39:13,066 - Lark - INFO - connected to wss://msg-frontier.feishu.cn/ws/v2?fpid=493&aid=552564&device_id=7541233627736326148&access_key=f1c09a8ecfeda78a879d6c58ac26ddf3&service_id=33554678&ticket=18dffba4-e354-42ff-9467-99558f095d46 [conn_id=7541233627736326148]
+2025-08-22 10:39:13,068 - Lark - DEBUG - ping success [conn_id=7541233627736326148]
+2025-08-22 10:39:13,141 - Lark - DEBUG - receive pong [conn_id=7541233627736326148]
+2025-08-22 10:39:14,163 - Lark - DEBUG - receive message, message_type: event, message_id: 85f3058b-0ad3-42b8-b17b-2e0ae14ad7ed, trace_id: 51de29662b4a3046b72ea38dc537446d, payload: {"schema":"2.0","header":{"event_id":"51de29662b4a3046b72ea38dc537446d","token":"","create_time":"1755830352854","event_type":"im.chat.access_event.bot_p2p_chat_entered_v1","tenant_key":"1bc11fe2489f175f","app_id":"cli_a82e2062ec79d00c"},"event":{"chat_id":"oc_4151e119655cc70501d1d7b6eb144689","last_message_create_time":"1755830233181","last_message_id":"om_x100b4549335de0b80f3dc291615afd5","operator_id":{"open_id":"ou_2f54b7d185b170a7db045cd0ad02185a","union_id":"on_21fcd99f23e1594eb2281ce43233776c","user_id":null}}} [conn_id=7541233627736326148]
+2025-08-22 10:39:18,812 - Lark - DEBUG - receive message, message_type: event, message_id: 02087e46-c5d6-496a-8dc8-a593f7773e8c, trace_id: c5fe96514d574c2f0ad68e8c113a3bb5, payload: {"schema":"2.0","header":{"event_id":"c5fe96514d574c2f0ad68e8c113a3bb5","token":"","create_time":"1755830358595","event_type":"im.message.receive_v1","tenant_key":"1bc11fe2489f175f","app_id":"cli_a82e2062ec79d00c"},"event":{"message":{"chat_id":"oc_4151e119655cc70501d1d7b6eb144689","chat_type":"p2p","content":"{\"text\":\"123\"}","create_time":"1755830358275","message_id":"om_x100b4549cbaf80500f3ce0dae9467c1","message_type":"text","update_time":"1755830358275","user_agent":"Mozilla/5.0 (Linux; Android 15; V2324A Build/AP3A.240905.015.A2; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/132.0.6834.152 Mobile Safari/537.36 Lark/7.49.9 LarkLocale/zh_CN ChannelName/Feishu ttnet SDK-Version/7.49.18"},"sender":{"sender_id":{"open_id":"ou_2f54b7d185b170a7db045cd0ad02185a","union_id":"on_21fcd99f23e1594eb2281ce43233776c","user_id":null},"sender_type":"user","tenant_key":"1bc11fe2489f175f"}}} [conn_id=7541233627736326148]
+2025-08-22 10:39:18,814 - Feishu - INFO - Received message event: {
+    "schema": "2.0",
+    "header": {
+        "event_id": "c5fe96514d574c2f0ad68e8c113a3bb5",
+        "token": "",
+        "create_time": "1755830358595",
+        "event_type": "im.message.receive_v1",
+        "tenant_key": "1bc11fe2489f175f",
+        "app_id": "cli_a82e2062ec79d00c"
+    },
+    "event": {
+        "sender": {
+            "sender_id": {
+                "open_id": "ou_2f54b7d185b170a7db045cd0ad02185a",
+                "union_id": "on_21fcd99f23e1594eb2281ce43233776c"
+            },
+            "sender_type": "user",
+            "tenant_key": "1bc11fe2489f175f"
+        },
+        "message": {
+            "message_id": "om_x100b4549cbaf80500f3ce0dae9467c1",
+            "create_time": "1755830358275",
+            "update_time": "1755830358275",
+            "chat_id": "oc_4151e119655cc70501d1d7b6eb144689",
+            "chat_type": "p2p",
+            "message_type": "text",
+            "content": "{\"text\":\"123\"}",
+            "user_agent": "Mozilla/5.0 (Linux; Android 15; V2324A Build/AP3A.240905.015.A2; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/132.0.6834.152 Mobile Safari/537.36 Lark/7.49.9 LarkLocale/zh_CN ChannelName/Feishu ttnet SDK-Version/7.49.18"
+        }
+    }
+}
+2025-08-22 10:39:18,814 - Feishu - INFO - Received text message from None in chat oc_4151e119655cc70501d1d7b6eb144689: 123
+2025-08-22 10:39:18,815 - Feishu - INFO - Processing message from oc_4151e119655cc70501d1d7b6eb144689: 123
+2025-08-22 10:39:20,001 - httpx - INFO - HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-22 10:39:20,271 - httpx - INFO - HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 400 Bad Request"
+2025-08-22 10:39:20,490 - httpx - INFO - HTTP Request: POST https://api.siliconflow.cn/v1/chat/completions "HTTP/1.1 403 Forbidden"
+2025-08-22 10:39:20,492 - Feishu - ERROR - Error processing message: Error code: 400 - {'error': {'code': 'invalid_parameter_error', 'param': None, 'message': '<400> InternalError.Algo.InvalidParameter: Tool names are not allowed to be [search]', 'type': 'invalid_request_error'}, 'id': 'chatcmpl-cb0f42a2-1499-933f-8983-f00f331b1c44', 'request_id': 'cb0f42a2-1499-933f-8983-f00f331b1c44'}
+Traceback (most recent call last):
+  File "/Users/junhui/code/python-code/feishu_agent/src/FeishuWebHook.py", line 52, in process_message_async
+    response = AgentClass().run_agent(message_text)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/junhui/code/python-code/feishu_agent/src/Agents.py", line 60, in run_agent
+    }).invoke(
+       ^^^^^^^
+  File "/Users/junhui/Library/Caches/pypoetry/virtualenvs/feishu-langchain-7rb6YGWV-py3.11/lib/python3.11/site-packages/langchain_core/runnables/configurable.py", line 133, in invoke
+    return runnable.invoke(input, config, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/junhui/Library/Caches/pypoetry/virtualenvs/feishu-langchain-7rb6YGWV-py3.11/lib/python3.11/site-packages/langchain/chains/base.py", line 170, in invoke
+    raise e
+  File "/Users/junhui/Library/Caches/pypoetry/virtualenvs/feishu-langchain-7rb6YGWV-py3.11/lib/python3.11/site-packages/langchain/chains/base.py", line 160, in invoke
+    self._call(inputs, run_manager=run_manager)
+  File "/Users/junhui/Library/Caches/pypoetry/virtualenvs/feishu-langchain-7rb6YGWV-py3.11/lib/python3.11/site-packages/langchain/agents/agent.py", line 1629, in _call
+    next_step_output = self._take_next_step(
+                       ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/junhui/Library/Caches/pypoetry/virtualenvs/feishu-langchain-7rb6YGWV-py3.11/lib/python3.11/site-packages/langchain/agents/agent.py", line 1335, in _take_next_step
+    [
+  File "/Users/junhui/Library/Caches/pypoetry/virtualenvs/feishu-langchain-7rb6YGWV-py3.11/lib/python3.11/site-packages/langchain/agents/agent.py", line 1335, in <listcomp>
+    [
+  File "/Users/junhui/Library/Caches/pypoetry/virtualenvs/feishu-langchain-7rb6YGWV-py3.11/lib/python3.11/site-packages/langchain/agents/agent.py", line 1363, in _iter_next_step
+    output = self._action_agent.plan(
+             ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/junhui/Library/Caches/pypoetry/virtualenvs/feishu-langchain-7rb6YGWV-py3.11/lib/python3.11/site-packages/langchain/agents/agent.py", line 580, in plan
+    for chunk in self.runnable.stream(inputs, config={"callbacks": callbacks}):
+  File "/Users/junhui/Library/Caches/pypoetry/virtualenvs/feishu-langchain-7rb6YGWV-py3.11/lib/python3.11/site-packages/langchain_core/runnables/base.py", line 3409, in stream
+    yield from self.transform(iter([input]), config, **kwargs)
+  File "/Users/junhui/Library/Caches/pypoetry/virtualenvs/feishu-langchain-7rb6YGWV-py3.11/lib/python3.11/site-packages/langchain_core/runnables/base.py", line 3396, in transform
+    yield from self._transform_stream_with_config(
+  File "/Users/junhui/Library/Caches/pypoetry/virtualenvs/feishu-langchain-7rb6YGWV-py3.11/lib/python3.11/site-packages/langchain_core/runnables/base.py", line 2196, in _transform_stream_with_config
+    chunk: Output = context.run(next, iterator)  # type: ignore
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/junhui/Library/Caches/pypoetry/virtualenvs/feishu-langchain-7rb6YGWV-py3.11/lib/python3.11/site-packages/langchain_core/runnables/base.py", line 3359, in _transform
+    yield from final_pipeline
+  File "/Users/junhui/Library/Caches/pypoetry/virtualenvs/feishu-langchain-7rb6YGWV-py3.11/lib/python3.11/site-packages/langchain_core/runnables/base.py", line 1414, in transform
+    for ichunk in input:
+  File "/Users/junhui/Library/Caches/pypoetry/virtualenvs/feishu-langchain-7rb6YGWV-py3.11/lib/python3.11/site-packages/langchain_core/runnables/base.py", line 1432, in transform
+    yield from self.stream(final, config, **kwargs)
+  File "/Users/junhui/Library/Caches/pypoetry/virtualenvs/feishu-langchain-7rb6YGWV-py3.11/lib/python3.11/site-packages/langchain_core/runnables/fallbacks.py", line 497, in stream
+    raise first_error
+  File "/Users/junhui/Library/Caches/pypoetry/virtualenvs/feishu-langchain-7rb6YGWV-py3.11/lib/python3.11/site-packages/langchain_core/runnables/fallbacks.py", line 485, in stream
+    chunk: Output = context.run(next, stream)  # type: ignore
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/junhui/Library/Caches/pypoetry/virtualenvs/feishu-langchain-7rb6YGWV-py3.11/lib/python3.11/site-packages/langchain_core/runnables/base.py", line 5531, in stream
+    yield from self.bound.stream(
+  File "/Users/junhui/Library/Caches/pypoetry/virtualenvs/feishu-langchain-7rb6YGWV-py3.11/lib/python3.11/site-packages/langchain_core/language_models/chat_models.py", line 415, in stream
+    for chunk in self._stream(messages, stop=stop, **kwargs):
+  File "/Users/junhui/Library/Caches/pypoetry/virtualenvs/feishu-langchain-7rb6YGWV-py3.11/lib/python3.11/site-packages/langchain_openai/chat_models/base.py", line 732, in _stream
+    response = self.client.create(**payload)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/junhui/Library/Caches/pypoetry/virtualenvs/feishu-langchain-7rb6YGWV-py3.11/lib/python3.11/site-packages/openai/_utils/_utils.py", line 279, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/junhui/Library/Caches/pypoetry/virtualenvs/feishu-langchain-7rb6YGWV-py3.11/lib/python3.11/site-packages/openai/resources/chat/completions/completions.py", line 879, in create
+    return self._post(
+           ^^^^^^^^^^^
+  File "/Users/junhui/Library/Caches/pypoetry/virtualenvs/feishu-langchain-7rb6YGWV-py3.11/lib/python3.11/site-packages/openai/_base_client.py", line 1290, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/junhui/Library/Caches/pypoetry/virtualenvs/feishu-langchain-7rb6YGWV-py3.11/lib/python3.11/site-packages/openai/_base_client.py", line 967, in request
+    return self._request(
+           ^^^^^^^^^^^^^^
+  File "/Users/junhui/Library/Caches/pypoetry/virtualenvs/feishu-langchain-7rb6YGWV-py3.11/lib/python3.11/site-packages/openai/_base_client.py", line 1071, in _request
+    raise self._make_status_error_from_response(err.response) from None
+openai.BadRequestError: Error code: 400 - {'error': {'code': 'invalid_parameter_error', 'param': None, 'message': '<400> InternalError.Algo.InvalidParameter: Tool names are not allowed to be [search]', 'type': 'invalid_request_error'}, 'id': 'chatcmpl-cb0f42a2-1499-933f-8983-f00f331b1c44', 'request_id': 'cb0f42a2-1499-933f-8983-f00f331b1c44'}
+2025-08-22 10:40:54,259 - Feishu - INFO - Service interrupted by user
+2025-08-22 10:40:54,261 - Feishu - INFO - Feishu long connection service stopped
+2025-08-22 10:41:56,769 - Feishu - INFO - Starting Feishu Long Connection Service
+2025-08-22 10:41:56,770 - Feishu - INFO - Starting Feishu WebSocket Client
+2025-08-22 10:41:56,770 - Feishu - INFO - App ID: cli_a82e2062ec79d00c
+2025-08-22 10:41:56,770 - Feishu - INFO - Event handler registered successfully
+2025-08-22 10:41:56,770 - Feishu - INFO - Starting WebSocket connection...
+2025-08-22 10:41:57,371 - Lark - INFO - connected to wss://msg-frontier.feishu.cn/ws/v2?fpid=493&aid=552564&device_id=7541234285028212739&access_key=91d50ccd0db1c70d64c1e21828c49462&service_id=33554678&ticket=aca5aa52-6b3c-433b-abae-aa1e667b0c4c [conn_id=7541234285028212739]
+2025-08-22 10:41:57,371 - Lark - DEBUG - ping success [conn_id=7541234285028212739]
+2025-08-22 10:41:57,444 - Lark - DEBUG - receive pong [conn_id=7541234285028212739]
+2025-08-22 10:42:00,416 - Lark - DEBUG - receive message, message_type: event, message_id: 82821bdb-840c-4e5e-bb69-46a805ffd87a, trace_id: c168b676627b8fa2440f7bb811e9cda6, payload: {"schema":"2.0","header":{"event_id":"c168b676627b8fa2440f7bb811e9cda6","token":"","create_time":"1755830518989","event_type":"im.chat.access_event.bot_p2p_chat_entered_v1","tenant_key":"1bc11fe2489f175f","app_id":"cli_a82e2062ec79d00c"},"event":{"chat_id":"oc_4151e119655cc70501d1d7b6eb144689","last_message_create_time":"1755830358275","last_message_id":"om_x100b4549cbaf80500f3ce0dae9467c1","operator_id":{"open_id":"ou_2f54b7d185b170a7db045cd0ad02185a","union_id":"on_21fcd99f23e1594eb2281ce43233776c","user_id":null}}} [conn_id=7541234285028212739]
+2025-08-22 10:42:05,258 - Lark - DEBUG - receive message, message_type: event, message_id: 821962ab-d4e0-4a99-926d-5db840bc5f84, trace_id: 0b918120a5c733952efb3afa66f2b9ea, payload: {"schema":"2.0","header":{"event_id":"0b918120a5c733952efb3afa66f2b9ea","token":"","create_time":"1755830525203","event_type":"im.message.receive_v1","tenant_key":"1bc11fe2489f175f","app_id":"cli_a82e2062ec79d00c"},"event":{"message":{"chat_id":"oc_4151e119655cc70501d1d7b6eb144689","chat_type":"p2p","content":"{\"text\":\"111\"}","create_time":"1755830524818","message_id":"om_x100b4549c10728440f352c8abb47e17","message_type":"text","update_time":"1755830524818","user_agent":"Mozilla/5.0 (Linux; Android 15; V2324A Build/AP3A.240905.015.A2; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/132.0.6834.152 Mobile Safari/537.36 Lark/7.49.9 LarkLocale/zh_CN ChannelName/Feishu ttnet SDK-Version/7.49.18"},"sender":{"sender_id":{"open_id":"ou_2f54b7d185b170a7db045cd0ad02185a","union_id":"on_21fcd99f23e1594eb2281ce43233776c","user_id":null},"sender_type":"user","tenant_key":"1bc11fe2489f175f"}}} [conn_id=7541234285028212739]
+2025-08-22 10:42:05,261 - Feishu - INFO - Received message event: {
+    "schema": "2.0",
+    "header": {
+        "event_id": "0b918120a5c733952efb3afa66f2b9ea",
+        "token": "",
+        "create_time": "1755830525203",
+        "event_type": "im.message.receive_v1",
+        "tenant_key": "1bc11fe2489f175f",
+        "app_id": "cli_a82e2062ec79d00c"
+    },
+    "event": {
+        "sender": {
+            "sender_id": {
+                "open_id": "ou_2f54b7d185b170a7db045cd0ad02185a",
+                "union_id": "on_21fcd99f23e1594eb2281ce43233776c"
+            },
+            "sender_type": "user",
+            "tenant_key": "1bc11fe2489f175f"
+        },
+        "message": {
+            "message_id": "om_x100b4549c10728440f352c8abb47e17",
+            "create_time": "1755830524818",
+            "update_time": "1755830524818",
+            "chat_id": "oc_4151e119655cc70501d1d7b6eb144689",
+            "chat_type": "p2p",
+            "message_type": "text",
+            "content": "{\"text\":\"111\"}",
+            "user_agent": "Mozilla/5.0 (Linux; Android 15; V2324A Build/AP3A.240905.015.A2; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/132.0.6834.152 Mobile Safari/537.36 Lark/7.49.9 LarkLocale/zh_CN ChannelName/Feishu ttnet SDK-Version/7.49.18"
+        }
+    }
+}
+2025-08-22 10:42:05,261 - Feishu - INFO - Received text message from None in chat oc_4151e119655cc70501d1d7b6eb144689: 111
+2025-08-22 10:42:05,262 - Feishu - INFO - Processing message from oc_4151e119655cc70501d1d7b6eb144689: 111
+2025-08-22 10:42:06,356 - httpx - INFO - HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-22 10:42:07,176 - httpx - INFO - HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-22 10:42:07,353 - Feishu - INFO - Generated reply: 您好，我是小浪，有什么可以帮助您的吗？
+2025-08-22 10:42:07,539 - Lark - DEBUG - POST https://open.feishu.cn/open-apis/auth/v3/tenant_access_token/internal 200, headers: {"User-Agent": "oapi-sdk-python/v1.4.22"}, params: [], body: {"app_id": "cli_a82e2062ec79d00c", "app_secret": "R3iOJMJa7djTFXQunhSu1fie1Qg1RAyP"}
+2025-08-22 10:42:08,300 - Lark - DEBUG - POST https://open.feishu.cn/open-apis/im/v1/messages 200, headers: {"User-Agent": "oapi-sdk-python/v1.4.22", "Content-Type": "application/json; charset=utf-8", "Authorization": "Bearer t-g1048maGY7BPSAHQ7MS4Y5XRPAPC45EZ6O6CX7R5"}, params: [["receive_id_type", "chat_id"]], body: {"receive_id": "oc_4151e119655cc70501d1d7b6eb144689", "msg_type": "text", "content": "{\"text\": \"您好，我是小浪，有什么可以帮助您的吗？\"}"}
+2025-08-22 10:42:08,301 - Feishu - INFO - Successfully sent reply to chat oc_4151e119655cc70501d1d7b6eb144689
+2025-08-22 10:42:09,739 - Lark - DEBUG - receive message, message_type: event, message_id: 8b2625ec-97ca-43f0-8e2f-9669389692ac, trace_id: 686c33d05a99516472697d5fbaa33a09, payload: {"schema":"2.0","header":{"event_id":"686c33d05a99516472697d5fbaa33a09","token":"","create_time":"1755830529579","event_type":"im.message.message_read_v1","tenant_key":"1bc11fe2489f175f","app_id":"cli_a82e2062ec79d00c"},"event":{"message_id_list":["om_x100b4549decd44640f3736eba97996c"],"reader":{"read_time":"1755830529342","reader_id":{"open_id":"ou_2f54b7d185b170a7db045cd0ad02185a","union_id":"on_21fcd99f23e1594eb2281ce43233776c","user_id":null},"tenant_key":"1bc11fe2489f175f"}}} [conn_id=7541234285028212739]
+2025-08-22 10:42:09,741 - Lark - ERROR - handle message failed, message_type: event, message_id: 8b2625ec-97ca-43f0-8e2f-9669389692ac, trace_id: 686c33d05a99516472697d5fbaa33a09, err: processor not found, type: im.message.message_read_v1 [conn_id=7541234285028212739]
+2025-08-22 10:42:18,749 - Lark - DEBUG - receive message, message_type: event, message_id: 948a0d42-dfa1-47e7-a66d-0cd829096fb4, trace_id: 9111665bd00672a301ccd8b812ec0ec0, payload: {"schema":"2.0","header":{"event_id":"9111665bd00672a301ccd8b812ec0ec0","token":"","create_time":"1755830538533","event_type":"im.message.receive_v1","tenant_key":"1bc11fe2489f175f","app_id":"cli_a82e2062ec79d00c"},"event":{"message":{"chat_id":"oc_4151e119655cc70501d1d7b6eb144689","chat_type":"p2p","content":"{\"text\":\"你是谁\"}","create_time":"1755830538222","message_id":"om_x100b4549de6cd5480f4b8bd6332d6a6","message_type":"text","update_time":"1755830538222","user_agent":"Mozilla/5.0 (Linux; Android 15; V2324A Build/AP3A.240905.015.A2; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/132.0.6834.152 Mobile Safari/537.36 Lark/7.49.9 LarkLocale/zh_CN ChannelName/Feishu ttnet SDK-Version/7.49.18"},"sender":{"sender_id":{"open_id":"ou_2f54b7d185b170a7db045cd0ad02185a","union_id":"on_21fcd99f23e1594eb2281ce43233776c","user_id":null},"sender_type":"user","tenant_key":"1bc11fe2489f175f"}}} [conn_id=7541234285028212739]
+2025-08-22 10:42:18,751 - Feishu - INFO - Received message event: {
+    "schema": "2.0",
+    "header": {
+        "event_id": "9111665bd00672a301ccd8b812ec0ec0",
+        "token": "",
+        "create_time": "1755830538533",
+        "event_type": "im.message.receive_v1",
+        "tenant_key": "1bc11fe2489f175f",
+        "app_id": "cli_a82e2062ec79d00c"
+    },
+    "event": {
+        "sender": {
+            "sender_id": {
+                "open_id": "ou_2f54b7d185b170a7db045cd0ad02185a",
+                "union_id": "on_21fcd99f23e1594eb2281ce43233776c"
+            },
+            "sender_type": "user",
+            "tenant_key": "1bc11fe2489f175f"
+        },
+        "message": {
+            "message_id": "om_x100b4549de6cd5480f4b8bd6332d6a6",
+            "create_time": "1755830538222",
+            "update_time": "1755830538222",
+            "chat_id": "oc_4151e119655cc70501d1d7b6eb144689",
+            "chat_type": "p2p",
+            "message_type": "text",
+            "content": "{\"text\":\"你是谁\"}",
+            "user_agent": "Mozilla/5.0 (Linux; Android 15; V2324A Build/AP3A.240905.015.A2; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/132.0.6834.152 Mobile Safari/537.36 Lark/7.49.9 LarkLocale/zh_CN ChannelName/Feishu ttnet SDK-Version/7.49.18"
+        }
+    }
+}
+2025-08-22 10:42:18,752 - Feishu - INFO - Received text message from None in chat oc_4151e119655cc70501d1d7b6eb144689: 你是谁
+2025-08-22 10:42:18,752 - Feishu - INFO - Processing message from oc_4151e119655cc70501d1d7b6eb144689: 你是谁
+2025-08-22 10:42:19,775 - httpx - INFO - HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-22 10:42:20,535 - httpx - INFO - HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-22 10:42:22,252 - Feishu - INFO - Generated reply: 我是小浪，一名智能客服助手。我今年23岁，来自中国，喜欢帮助别人、跑步和看书。我在langchain领域有一些专业知识，可以帮您解答相关问题。我的父亲是tomiezhang，目前每月工资是5000元。如果您有任何问题需要解决，欢迎随时告诉我！
+2025-08-22 10:42:22,948 - Lark - DEBUG - POST https://open.feishu.cn/open-apis/im/v1/messages 200, headers: {"User-Agent": "oapi-sdk-python/v1.4.22", "Content-Type": "application/json; charset=utf-8", "Authorization": "Bearer t-g1048maGY7BPSAHQ7MS4Y5XRPAPC45EZ6O6CX7R5"}, params: [["receive_id_type", "chat_id"]], body: {"receive_id": "oc_4151e119655cc70501d1d7b6eb144689", "msg_type": "text", "content": "{\"text\": \"我是小浪，一名智能客服助手。我今年23岁，来自中国，喜欢帮助别人、跑步和看书。我在langchain领域有一些专业知识，可以帮您解答相关问题。我的父亲是tomiezhang，目前每月工资是5000元。如果您有任何问题需要解决，欢迎随时告诉我！\"}"}
+2025-08-22 10:42:22,949 - Feishu - INFO - Successfully sent reply to chat oc_4151e119655cc70501d1d7b6eb144689
+2025-08-22 10:42:23,972 - Lark - DEBUG - receive message, message_type: event, message_id: 4f4a4c29-830d-45dd-adb5-7e042e302f36, trace_id: 05093a86f2918c233712b67118dda28e, payload: {"schema":"2.0","header":{"event_id":"05093a86f2918c233712b67118dda28e","token":"","create_time":"1755830543945","event_type":"im.message.message_read_v1","tenant_key":"1bc11fe2489f175f","app_id":"cli_a82e2062ec79d00c"},"event":{"message_id_list":["om_x100b4549de21e8ac0f32a47162fdd37"],"reader":{"read_time":"1755830543725","reader_id":{"open_id":"ou_2f54b7d185b170a7db045cd0ad02185a","union_id":"on_21fcd99f23e1594eb2281ce43233776c","user_id":null},"tenant_key":"1bc11fe2489f175f"}}} [conn_id=7541234285028212739]
+2025-08-22 10:42:23,973 - Lark - ERROR - handle message failed, message_type: event, message_id: 4f4a4c29-830d-45dd-adb5-7e042e302f36, trace_id: 05093a86f2918c233712b67118dda28e, err: processor not found, type: im.message.message_read_v1 [conn_id=7541234285028212739]
+2025-08-22 10:42:25,300 - Lark - DEBUG - receive message, message_type: event, message_id: 2b41f2a8-569c-4ae9-957a-4e29c6dbea20, trace_id: 686c33d05a99516472697d5fbaa33a09, payload: {"schema":"2.0","header":{"event_id":"686c33d05a99516472697d5fbaa33a09","token":"","create_time":"1755830529579","event_type":"im.message.message_read_v1","tenant_key":"1bc11fe2489f175f","app_id":"cli_a82e2062ec79d00c"},"event":{"message_id_list":["om_x100b4549decd44640f3736eba97996c"],"reader":{"read_time":"1755830529342","reader_id":{"open_id":"ou_2f54b7d185b170a7db045cd0ad02185a","union_id":"on_21fcd99f23e1594eb2281ce43233776c","user_id":null},"tenant_key":"1bc11fe2489f175f"}}} [conn_id=7541234285028212739]
+2025-08-22 10:42:25,301 - Lark - ERROR - handle message failed, message_type: event, message_id: 2b41f2a8-569c-4ae9-957a-4e29c6dbea20, trace_id: 686c33d05a99516472697d5fbaa33a09, err: processor not found, type: im.message.message_read_v1 [conn_id=7541234285028212739]
+2025-08-22 10:42:39,836 - Lark - DEBUG - receive message, message_type: event, message_id: 5e7a6dcc-8c72-4759-b586-c5ad745f22fe, trace_id: 05093a86f2918c233712b67118dda28e, payload: {"schema":"2.0","header":{"event_id":"05093a86f2918c233712b67118dda28e","token":"","create_time":"1755830543945","event_type":"im.message.message_read_v1","tenant_key":"1bc11fe2489f175f","app_id":"cli_a82e2062ec79d00c"},"event":{"message_id_list":["om_x100b4549de21e8ac0f32a47162fdd37"],"reader":{"read_time":"1755830543725","reader_id":{"open_id":"ou_2f54b7d185b170a7db045cd0ad02185a","union_id":"on_21fcd99f23e1594eb2281ce43233776c","user_id":null},"tenant_key":"1bc11fe2489f175f"}}} [conn_id=7541234285028212739]
+2025-08-22 10:42:39,836 - Lark - ERROR - handle message failed, message_type: event, message_id: 5e7a6dcc-8c72-4759-b586-c5ad745f22fe, trace_id: 05093a86f2918c233712b67118dda28e, err: processor not found, type: im.message.message_read_v1 [conn_id=7541234285028212739]
+2025-08-22 10:43:57,373 - Lark - DEBUG - ping success [conn_id=7541234285028212739]
+2025-08-22 10:43:57,440 - Lark - DEBUG - receive pong [conn_id=7541234285028212739]
+2025-08-22 10:45:15,184 - Feishu - INFO - Service interrupted by user
+2025-08-22 10:45:15,185 - Feishu - INFO - Feishu long connection service stopped
+2025-08-22 10:45:22,819 - Feishu - INFO - Starting Feishu Long Connection Service
+2025-08-22 10:45:22,819 - Feishu - INFO - Starting Feishu WebSocket Client
+2025-08-22 10:45:22,819 - Feishu - INFO - App ID: cli_a82e2062ec79d00c
+2025-08-22 10:45:22,819 - Feishu - INFO - Event handler registered successfully
+2025-08-22 10:45:22,819 - Feishu - INFO - Starting WebSocket connection...
+2025-08-22 10:45:23,274 - Lark - INFO - connected to wss://msg-frontier.feishu.cn/ws/v2?fpid=493&aid=552564&device_id=7541235215446786051&access_key=86e81067c495dd8bd64ca5caa5dec8db&service_id=33554678&ticket=0351e49a-ab37-4421-b41f-ffba3c9d0222 [conn_id=7541235215446786051]
+2025-08-22 10:45:23,276 - Lark - DEBUG - ping success [conn_id=7541235215446786051]
+2025-08-22 10:45:23,345 - Lark - DEBUG - receive pong [conn_id=7541235215446786051]
+2025-08-22 10:45:27,385 - Lark - DEBUG - receive message, message_type: event, message_id: 06316553-cb02-458d-973b-d8d5b5376ba4, trace_id: 085fe2dac1e29a7b97dd801fa71f03d0, payload: {"schema":"2.0","header":{"event_id":"085fe2dac1e29a7b97dd801fa71f03d0","token":"","create_time":"1755830725979","event_type":"im.chat.access_event.bot_p2p_chat_entered_v1","tenant_key":"1bc11fe2489f175f","app_id":"cli_a82e2062ec79d00c"},"event":{"chat_id":"oc_4151e119655cc70501d1d7b6eb144689","last_message_create_time":"1755830542928","last_message_id":"om_x100b4549de21e8ac0f32a47162fdd37","operator_id":{"open_id":"ou_2f54b7d185b170a7db045cd0ad02185a","union_id":"on_21fcd99f23e1594eb2281ce43233776c","user_id":null}}} [conn_id=7541235215446786051]
+2025-08-22 10:45:33,202 - Lark - DEBUG - receive message, message_type: event, message_id: 054f9b05-5e86-4fe3-8892-f64105e4f92b, trace_id: e0ce6bcaac1dc3c2e6fa13822af3048c, payload: {"schema":"2.0","header":{"event_id":"e0ce6bcaac1dc3c2e6fa13822af3048c","token":"","create_time":"1755830733105","event_type":"im.message.receive_v1","tenant_key":"1bc11fe2489f175f","app_id":"cli_a82e2062ec79d00c"},"event":{"message":{"chat_id":"oc_4151e119655cc70501d1d7b6eb144689","chat_type":"p2p","content":"{\"text\":\"我叫吴俊辉\"}","create_time":"1755830732743","message_id":"om_x100b4549d20424840e3adb28705094d","message_type":"text","update_time":"1755830732743","user_agent":"Mozilla/5.0 (Linux; Android 15; V2324A Build/AP3A.240905.015.A2; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/132.0.6834.152 Mobile Safari/537.36 Lark/7.49.9 LarkLocale/zh_CN ChannelName/Feishu ttnet SDK-Version/7.49.18"},"sender":{"sender_id":{"open_id":"ou_2f54b7d185b170a7db045cd0ad02185a","union_id":"on_21fcd99f23e1594eb2281ce43233776c","user_id":null},"sender_type":"user","tenant_key":"1bc11fe2489f175f"}}} [conn_id=7541235215446786051]
+2025-08-22 10:45:33,204 - Feishu - INFO - Received message event: {
+    "schema": "2.0",
+    "header": {
+        "event_id": "e0ce6bcaac1dc3c2e6fa13822af3048c",
+        "token": "",
+        "create_time": "1755830733105",
+        "event_type": "im.message.receive_v1",
+        "tenant_key": "1bc11fe2489f175f",
+        "app_id": "cli_a82e2062ec79d00c"
+    },
+    "event": {
+        "sender": {
+            "sender_id": {
+                "open_id": "ou_2f54b7d185b170a7db045cd0ad02185a",
+                "union_id": "on_21fcd99f23e1594eb2281ce43233776c"
+            },
+            "sender_type": "user",
+            "tenant_key": "1bc11fe2489f175f"
+        },
+        "message": {
+            "message_id": "om_x100b4549d20424840e3adb28705094d",
+            "create_time": "1755830732743",
+            "update_time": "1755830732743",
+            "chat_id": "oc_4151e119655cc70501d1d7b6eb144689",
+            "chat_type": "p2p",
+            "message_type": "text",
+            "content": "{\"text\":\"我叫吴俊辉\"}",
+            "user_agent": "Mozilla/5.0 (Linux; Android 15; V2324A Build/AP3A.240905.015.A2; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/132.0.6834.152 Mobile Safari/537.36 Lark/7.49.9 LarkLocale/zh_CN ChannelName/Feishu ttnet SDK-Version/7.49.18"
+        }
+    }
+}
+2025-08-22 10:45:33,204 - Feishu - INFO - Received text message from None in chat oc_4151e119655cc70501d1d7b6eb144689: 我叫吴俊辉
+2025-08-22 10:45:33,205 - Feishu - INFO - Processing message from oc_4151e119655cc70501d1d7b6eb144689: 我叫吴俊辉
+2025-08-22 10:45:34,325 - httpx - INFO - HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-22 10:45:35,178 - httpx - INFO - HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-22 10:45:35,520 - Feishu - INFO - Generated reply: 您好，吴俊辉！有什么我可以帮您的吗？
+2025-08-22 10:45:35,680 - Lark - DEBUG - POST https://open.feishu.cn/open-apis/auth/v3/tenant_access_token/internal 200, headers: {"User-Agent": "oapi-sdk-python/v1.4.22"}, params: [], body: {"app_id": "cli_a82e2062ec79d00c", "app_secret": "R3iOJMJa7djTFXQunhSu1fie1Qg1RAyP"}
+2025-08-22 10:45:36,490 - Lark - DEBUG - POST https://open.feishu.cn/open-apis/im/v1/messages 200, headers: {"User-Agent": "oapi-sdk-python/v1.4.22", "Content-Type": "application/json; charset=utf-8", "Authorization": "Bearer t-g1048maGY7BPSAHQ7MS4Y5XRPAPC45EZ6O6CX7R5"}, params: [["receive_id_type", "chat_id"]], body: {"receive_id": "oc_4151e119655cc70501d1d7b6eb144689", "msg_type": "text", "content": "{\"text\": \"您好，吴俊辉！有什么我可以帮您的吗？\"}"}
+2025-08-22 10:45:36,491 - Feishu - INFO - Successfully sent reply to chat oc_4151e119655cc70501d1d7b6eb144689
+2025-08-22 10:45:37,914 - Lark - DEBUG - receive message, message_type: event, message_id: e43e2f9a-0032-437e-b329-c20765c1daf6, trace_id: d19aa491b6030eb72a6c39d3a751e9f3, payload: {"schema":"2.0","header":{"event_id":"d19aa491b6030eb72a6c39d3a751e9f3","token":"","create_time":"1755830737750","event_type":"im.message.message_read_v1","tenant_key":"1bc11fe2489f175f","app_id":"cli_a82e2062ec79d00c"},"event":{"message_id_list":["om_x100b4549d3c8bc200e3e3efe14291a5"],"reader":{"read_time":"1755830737537","reader_id":{"open_id":"ou_2f54b7d185b170a7db045cd0ad02185a","union_id":"on_21fcd99f23e1594eb2281ce43233776c","user_id":null},"tenant_key":"1bc11fe2489f175f"}}} [conn_id=7541235215446786051]
+2025-08-22 10:45:37,915 - Feishu - INFO - Message read event received
+2025-08-22 10:45:44,667 - Lark - DEBUG - receive message, message_type: event, message_id: 1acdc75c-8218-4248-8f57-d63b531a2cb2, trace_id: 01979ebf70079fde0fba2209ad18231b, payload: {"schema":"2.0","header":{"event_id":"01979ebf70079fde0fba2209ad18231b","token":"","create_time":"1755830744462","event_type":"im.message.receive_v1","tenant_key":"1bc11fe2489f175f","app_id":"cli_a82e2062ec79d00c"},"event":{"message":{"chat_id":"oc_4151e119655cc70501d1d7b6eb144689","chat_type":"p2p","content":"{\"text\":\"我叫什么名字\"}","create_time":"1755830744152","message_id":"om_x100b4549d34de8140f481a8fe0b1ce9","message_type":"text","update_time":"1755830744152","user_agent":"Mozilla/5.0 (Linux; Android 15; V2324A Build/AP3A.240905.015.A2; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/132.0.6834.152 Mobile Safari/537.36 Lark/7.49.9 LarkLocale/zh_CN ChannelName/Feishu ttnet SDK-Version/7.49.18"},"sender":{"sender_id":{"open_id":"ou_2f54b7d185b170a7db045cd0ad02185a","union_id":"on_21fcd99f23e1594eb2281ce43233776c","user_id":null},"sender_type":"user","tenant_key":"1bc11fe2489f175f"}}} [conn_id=7541235215446786051]
+2025-08-22 10:45:44,668 - Feishu - INFO - Received message event: {
+    "schema": "2.0",
+    "header": {
+        "event_id": "01979ebf70079fde0fba2209ad18231b",
+        "token": "",
+        "create_time": "1755830744462",
+        "event_type": "im.message.receive_v1",
+        "tenant_key": "1bc11fe2489f175f",
+        "app_id": "cli_a82e2062ec79d00c"
+    },
+    "event": {
+        "sender": {
+            "sender_id": {
+                "open_id": "ou_2f54b7d185b170a7db045cd0ad02185a",
+                "union_id": "on_21fcd99f23e1594eb2281ce43233776c"
+            },
+            "sender_type": "user",
+            "tenant_key": "1bc11fe2489f175f"
+        },
+        "message": {
+            "message_id": "om_x100b4549d34de8140f481a8fe0b1ce9",
+            "create_time": "1755830744152",
+            "update_time": "1755830744152",
+            "chat_id": "oc_4151e119655cc70501d1d7b6eb144689",
+            "chat_type": "p2p",
+            "message_type": "text",
+            "content": "{\"text\":\"我叫什么名字\"}",
+            "user_agent": "Mozilla/5.0 (Linux; Android 15; V2324A Build/AP3A.240905.015.A2; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/132.0.6834.152 Mobile Safari/537.36 Lark/7.49.9 LarkLocale/zh_CN ChannelName/Feishu ttnet SDK-Version/7.49.18"
+        }
+    }
+}
+2025-08-22 10:45:44,668 - Feishu - INFO - Received text message from None in chat oc_4151e119655cc70501d1d7b6eb144689: 我叫什么名字
+2025-08-22 10:45:44,668 - Feishu - INFO - Processing message from oc_4151e119655cc70501d1d7b6eb144689: 我叫什么名字
+2025-08-22 10:45:45,632 - httpx - INFO - HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-22 10:45:46,364 - httpx - INFO - HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-22 10:45:46,526 - Feishu - INFO - Generated reply: 您的名字是吴俊辉。有什么我可以帮您的吗？
+2025-08-22 10:45:47,228 - Lark - DEBUG - POST https://open.feishu.cn/open-apis/im/v1/messages 200, headers: {"User-Agent": "oapi-sdk-python/v1.4.22", "Content-Type": "application/json; charset=utf-8", "Authorization": "Bearer t-g1048maGY7BPSAHQ7MS4Y5XRPAPC45EZ6O6CX7R5"}, params: [["receive_id_type", "chat_id"]], body: {"receive_id": "oc_4151e119655cc70501d1d7b6eb144689", "msg_type": "text", "content": "{\"text\": \"您的名字是吴俊辉。有什么我可以帮您的吗？\"}"}
+2025-08-22 10:45:47,229 - Feishu - INFO - Successfully sent reply to chat oc_4151e119655cc70501d1d7b6eb144689
+2025-08-22 10:45:48,458 - Lark - DEBUG - receive message, message_type: event, message_id: a540ee6e-44b0-4039-a70d-fddcf07f47bd, trace_id: 54ba9dd563a368ebae02615856748a58, payload: {"schema":"2.0","header":{"event_id":"54ba9dd563a368ebae02615856748a58","token":"","create_time":"1755830748353","event_type":"im.message.message_read_v1","tenant_key":"1bc11fe2489f175f","app_id":"cli_a82e2062ec79d00c"},"event":{"message_id_list":["om_x100b4549d37ce2340f3a09d2dd4a75e"],"reader":{"read_time":"1755830748100","reader_id":{"open_id":"ou_2f54b7d185b170a7db045cd0ad02185a","union_id":"on_21fcd99f23e1594eb2281ce43233776c","user_id":null},"tenant_key":"1bc11fe2489f175f"}}} [conn_id=7541235215446786051]
+2025-08-22 10:45:48,460 - Feishu - INFO - Message read event received
+2025-08-22 10:47:23,279 - Lark - DEBUG - ping success [conn_id=7541235215446786051]
+2025-08-22 10:47:23,348 - Lark - DEBUG - receive pong [conn_id=7541235215446786051]
+2025-08-22 10:47:25,987 - Lark - DEBUG - receive message, message_type: event, message_id: 153996e7-28b6-4220-875f-d58333ecfbd2, trace_id: 686c33d05a99516472697d5fbaa33a09, payload: {"schema":"2.0","header":{"event_id":"686c33d05a99516472697d5fbaa33a09","token":"","create_time":"1755830529579","event_type":"im.message.message_read_v1","tenant_key":"1bc11fe2489f175f","app_id":"cli_a82e2062ec79d00c"},"event":{"message_id_list":["om_x100b4549decd44640f3736eba97996c"],"reader":{"read_time":"1755830529342","reader_id":{"open_id":"ou_2f54b7d185b170a7db045cd0ad02185a","union_id":"on_21fcd99f23e1594eb2281ce43233776c","user_id":null},"tenant_key":"1bc11fe2489f175f"}}} [conn_id=7541235215446786051]
+2025-08-22 10:47:25,989 - Feishu - INFO - Message read event received
+2025-08-22 10:47:40,791 - Lark - DEBUG - receive message, message_type: event, message_id: 2e4d0227-8b48-46a6-9c36-2e425ce1bca3, trace_id: 05093a86f2918c233712b67118dda28e, payload: {"schema":"2.0","header":{"event_id":"05093a86f2918c233712b67118dda28e","token":"","create_time":"1755830543945","event_type":"im.message.message_read_v1","tenant_key":"1bc11fe2489f175f","app_id":"cli_a82e2062ec79d00c"},"event":{"message_id_list":["om_x100b4549de21e8ac0f32a47162fdd37"],"reader":{"read_time":"1755830543725","reader_id":{"open_id":"ou_2f54b7d185b170a7db045cd0ad02185a","union_id":"on_21fcd99f23e1594eb2281ce43233776c","user_id":null},"tenant_key":"1bc11fe2489f175f"}}} [conn_id=7541235215446786051]
+2025-08-22 10:47:40,791 - Feishu - INFO - Message read event received
+2025-08-22 10:49:23,280 - Lark - DEBUG - ping success [conn_id=7541235215446786051]
+2025-08-22 10:49:23,385 - Lark - DEBUG - receive pong [conn_id=7541235215446786051]
+2025-08-22 10:51:23,282 - Lark - DEBUG - ping success [conn_id=7541235215446786051]
+2025-08-22 10:51:23,352 - Lark - DEBUG - receive pong [conn_id=7541235215446786051]
+2025-08-22 10:53:23,286 - Lark - DEBUG - ping success [conn_id=7541235215446786051]
+2025-08-22 10:53:23,350 - Lark - DEBUG - receive pong [conn_id=7541235215446786051]
+2025-08-22 10:55:23,286 - Lark - DEBUG - ping success [conn_id=7541235215446786051]
+2025-08-22 10:55:23,358 - Lark - DEBUG - receive pong [conn_id=7541235215446786051]
+2025-08-22 10:57:23,290 - Lark - DEBUG - ping success [conn_id=7541235215446786051]
+2025-08-22 10:57:23,379 - Lark - DEBUG - receive pong [conn_id=7541235215446786051]
+2025-08-22 10:58:37,826 - Lark - DEBUG - receive message, message_type: event, message_id: ce512dd2-c5ea-48dc-a4ca-0da2ba6b5268, trace_id: c724484dbb9deaaf265b116241e8967a, payload: {"schema":"2.0","header":{"event_id":"c724484dbb9deaaf265b116241e8967a","token":"","create_time":"1755831516420","event_type":"im.chat.access_event.bot_p2p_chat_entered_v1","tenant_key":"1bc11fe2489f175f","app_id":"cli_a82e2062ec79d00c"},"event":{"chat_id":"oc_4151e119655cc70501d1d7b6eb144689","last_message_create_time":"1755830747230","last_message_id":"om_x100b4549d37ce2340f3a09d2dd4a75e","operator_id":{"open_id":"ou_2f54b7d185b170a7db045cd0ad02185a","union_id":"on_21fcd99f23e1594eb2281ce43233776c","user_id":null}}} [conn_id=7541235215446786051]
+2025-08-22 10:59:23,293 - Lark - DEBUG - ping success [conn_id=7541235215446786051]
+2025-08-22 10:59:23,496 - Lark - DEBUG - receive pong [conn_id=7541235215446786051]
+2025-08-22 11:01:23,293 - Lark - DEBUG - ping success [conn_id=7541235215446786051]
+2025-08-22 11:01:23,369 - Lark - DEBUG - receive pong [conn_id=7541235215446786051]
+2025-08-22 11:03:23,295 - Lark - DEBUG - ping success [conn_id=7541235215446786051]
+2025-08-22 11:03:23,374 - Lark - DEBUG - receive pong [conn_id=7541235215446786051]
+2025-08-22 11:05:23,298 - Lark - DEBUG - ping success [conn_id=7541235215446786051]
+2025-08-22 11:05:23,372 - Lark - DEBUG - receive pong [conn_id=7541235215446786051]
+2025-08-22 11:07:23,302 - Lark - DEBUG - ping success [conn_id=7541235215446786051]
+2025-08-22 11:07:23,370 - Lark - DEBUG - receive pong [conn_id=7541235215446786051]
+2025-08-22 11:09:23,305 - Lark - DEBUG - ping success [conn_id=7541235215446786051]
+2025-08-22 11:09:23,470 - Lark - DEBUG - receive pong [conn_id=7541235215446786051]
+2025-08-22 11:11:23,311 - Lark - DEBUG - ping success [conn_id=7541235215446786051]
+2025-08-22 11:11:23,450 - Lark - DEBUG - receive pong [conn_id=7541235215446786051]
+2025-08-22 11:13:23,315 - Lark - DEBUG - ping success [conn_id=7541235215446786051]
+2025-08-22 11:13:23,383 - Lark - DEBUG - receive pong [conn_id=7541235215446786051]
+2025-08-22 11:15:23,322 - Lark - DEBUG - ping success [conn_id=7541235215446786051]
+2025-08-22 11:15:23,399 - Lark - DEBUG - receive pong [conn_id=7541235215446786051]
+2025-08-22 11:17:23,328 - Lark - DEBUG - ping success [conn_id=7541235215446786051]
+2025-08-22 11:17:23,477 - Lark - DEBUG - receive pong [conn_id=7541235215446786051]
+2025-08-22 11:19:23,332 - Lark - DEBUG - ping success [conn_id=7541235215446786051]
+2025-08-22 11:19:23,662 - Lark - DEBUG - receive pong [conn_id=7541235215446786051]
+2025-08-22 11:21:23,339 - Lark - DEBUG - ping success [conn_id=7541235215446786051]
+2025-08-22 11:21:23,581 - Lark - DEBUG - receive pong [conn_id=7541235215446786051]
+2025-08-22 11:21:26,357 - Lark - DEBUG - receive message, message_type: event, message_id: 4052aaf6-b55c-4e18-bcb1-7df8edc066ea, trace_id: e507b1ae102b940019d1626f60635028, payload: {"schema":"2.0","header":{"event_id":"e507b1ae102b940019d1626f60635028","token":"","create_time":"1755832885041","event_type":"im.chat.access_event.bot_p2p_chat_entered_v1","tenant_key":"1bc11fe2489f175f","app_id":"cli_a82e2062ec79d00c"},"event":{"chat_id":"oc_4151e119655cc70501d1d7b6eb144689","last_message_create_time":"1755830747230","last_message_id":"om_x100b4549d37ce2340f3a09d2dd4a75e","operator_id":{"open_id":"ou_2f54b7d185b170a7db045cd0ad02185a","union_id":"on_21fcd99f23e1594eb2281ce43233776c","user_id":null}}} [conn_id=7541235215446786051]
+2025-08-22 11:21:31,666 - Lark - DEBUG - receive message, message_type: event, message_id: 8d5f6714-e4be-4280-bca6-c395e7638e7b, trace_id: d5a7e2b74b896a14a90e4af7bfa26647, payload: {"schema":"2.0","header":{"event_id":"d5a7e2b74b896a14a90e4af7bfa26647","token":"","create_time":"1755832891565","event_type":"im.message.receive_v1","tenant_key":"1bc11fe2489f175f","app_id":"cli_a82e2062ec79d00c"},"event":{"message":{"chat_id":"oc_4151e119655cc70501d1d7b6eb144689","chat_type":"p2p","content":"{\"text\":\"你在吗\"}","create_time":"1755832891180","message_id":"om_x100b454a6d7d00f40f44bc13f77de3e","message_type":"text","update_time":"1755832891180","user_agent":"Mozilla/5.0 (Linux; Android 15; V2324A Build/AP3A.240905.015.A2; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/132.0.6834.152 Mobile Safari/537.36 Lark/7.49.9 LarkLocale/zh_CN ChannelName/Feishu ttnet SDK-Version/7.49.18"},"sender":{"sender_id":{"open_id":"ou_2f54b7d185b170a7db045cd0ad02185a","union_id":"on_21fcd99f23e1594eb2281ce43233776c","user_id":null},"sender_type":"user","tenant_key":"1bc11fe2489f175f"}}} [conn_id=7541235215446786051]
+2025-08-22 11:21:31,668 - Feishu - INFO - Received message event: {
+    "schema": "2.0",
+    "header": {
+        "event_id": "d5a7e2b74b896a14a90e4af7bfa26647",
+        "token": "",
+        "create_time": "1755832891565",
+        "event_type": "im.message.receive_v1",
+        "tenant_key": "1bc11fe2489f175f",
+        "app_id": "cli_a82e2062ec79d00c"
+    },
+    "event": {
+        "sender": {
+            "sender_id": {
+                "open_id": "ou_2f54b7d185b170a7db045cd0ad02185a",
+                "union_id": "on_21fcd99f23e1594eb2281ce43233776c"
+            },
+            "sender_type": "user",
+            "tenant_key": "1bc11fe2489f175f"
+        },
+        "message": {
+            "message_id": "om_x100b454a6d7d00f40f44bc13f77de3e",
+            "create_time": "1755832891180",
+            "update_time": "1755832891180",
+            "chat_id": "oc_4151e119655cc70501d1d7b6eb144689",
+            "chat_type": "p2p",
+            "message_type": "text",
+            "content": "{\"text\":\"你在吗\"}",
+            "user_agent": "Mozilla/5.0 (Linux; Android 15; V2324A Build/AP3A.240905.015.A2; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/132.0.6834.152 Mobile Safari/537.36 Lark/7.49.9 LarkLocale/zh_CN ChannelName/Feishu ttnet SDK-Version/7.49.18"
+        }
+    }
+}
+2025-08-22 11:21:31,668 - Feishu - INFO - Received text message from None in chat oc_4151e119655cc70501d1d7b6eb144689: 你在吗
+2025-08-22 11:21:31,669 - Feishu - INFO - Processing message from oc_4151e119655cc70501d1d7b6eb144689: 你在吗
+2025-08-22 11:21:32,762 - httpx - INFO - HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-22 11:21:33,660 - httpx - INFO - HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-22 11:21:33,807 - Feishu - INFO - Generated reply: 您好，我在的。有什么我可以帮您的吗？
+2025-08-22 11:21:34,688 - Lark - DEBUG - POST https://open.feishu.cn/open-apis/im/v1/messages 200, headers: {"User-Agent": "oapi-sdk-python/v1.4.22", "Content-Type": "application/json; charset=utf-8", "Authorization": "Bearer t-g1048maGY7BPSAHQ7MS4Y5XRPAPC45EZ6O6CX7R5"}, params: [["receive_id_type", "chat_id"]], body: {"receive_id": "oc_4151e119655cc70501d1d7b6eb144689", "msg_type": "text", "content": "{\"text\": \"您好，我在的。有什么我可以帮您的吗？\"}"}
+2025-08-22 11:21:34,689 - Feishu - INFO - Successfully sent reply to chat oc_4151e119655cc70501d1d7b6eb144689
+2025-08-22 11:21:35,889 - Lark - DEBUG - receive message, message_type: event, message_id: a141a311-5b3f-4387-8231-a35ff8a7fe09, trace_id: e568ab7151ca591f81ceaaaba4fb8a6c, payload: {"schema":"2.0","header":{"event_id":"e568ab7151ca591f81ceaaaba4fb8a6c","token":"","create_time":"1755832895880","event_type":"im.message.message_read_v1","tenant_key":"1bc11fe2489f175f","app_id":"cli_a82e2062ec79d00c"},"event":{"message_id_list":["om_x100b454a6d2512180e3d1b193f8feec"],"reader":{"read_time":"1755832895580","reader_id":{"open_id":"ou_2f54b7d185b170a7db045cd0ad02185a","union_id":"on_21fcd99f23e1594eb2281ce43233776c","user_id":null},"tenant_key":"1bc11fe2489f175f"}}} [conn_id=7541235215446786051]
+2025-08-22 11:21:35,891 - Feishu - INFO - Message read event received
+2025-08-22 11:23:23,343 - Lark - DEBUG - ping success [conn_id=7541235215446786051]
+2025-08-22 11:23:23,430 - Lark - DEBUG - receive pong [conn_id=7541235215446786051]
+2025-08-22 11:25:23,345 - Lark - DEBUG - ping success [conn_id=7541235215446786051]
+2025-08-22 11:25:23,419 - Lark - DEBUG - receive pong [conn_id=7541235215446786051]
+2025-08-22 11:27:23,352 - Lark - DEBUG - ping success [conn_id=7541235215446786051]
+2025-08-22 11:27:23,424 - Lark - DEBUG - receive pong [conn_id=7541235215446786051]
+2025-08-22 11:29:23,359 - Lark - DEBUG - ping success [conn_id=7541235215446786051]
+2025-08-22 11:29:23,468 - Lark - DEBUG - receive pong [conn_id=7541235215446786051]
+2025-08-22 11:31:23,383 - Lark - DEBUG - ping success [conn_id=7541235215446786051]
+2025-08-22 11:31:23,475 - Lark - DEBUG - receive pong [conn_id=7541235215446786051]
+2025-08-22 11:33:23,388 - Lark - DEBUG - ping success [conn_id=7541235215446786051]
+2025-08-22 11:33:23,572 - Lark - DEBUG - receive pong [conn_id=7541235215446786051]
+2025-08-22 11:35:23,392 - Lark - DEBUG - ping success [conn_id=7541235215446786051]
+2025-08-22 11:35:23,583 - Lark - DEBUG - receive pong [conn_id=7541235215446786051]
+2025-08-22 11:37:23,398 - Lark - DEBUG - ping success [conn_id=7541235215446786051]
+2025-08-22 11:37:23,501 - Lark - DEBUG - receive pong [conn_id=7541235215446786051]
+2025-08-22 11:39:23,404 - Lark - DEBUG - ping success [conn_id=7541235215446786051]
+2025-08-22 11:39:23,580 - Lark - DEBUG - receive pong [conn_id=7541235215446786051]
+2025-08-22 11:40:58,780 - Lark - DEBUG - receive message, message_type: event, message_id: 44af2d62-ca91-44ff-870c-a86514330f49, trace_id: 277d4c54875dec63e52fc746f7ed4298, payload: {"schema":"2.0","header":{"event_id":"277d4c54875dec63e52fc746f7ed4298","token":"","create_time":"1755834057447","event_type":"im.chat.access_event.bot_p2p_chat_entered_v1","tenant_key":"1bc11fe2489f175f","app_id":"cli_a82e2062ec79d00c"},"event":{"chat_id":"oc_4151e119655cc70501d1d7b6eb144689","last_message_create_time":"1755832894689","last_message_id":"om_x100b454a6d2512180e3d1b193f8feec","operator_id":{"open_id":"ou_2f54b7d185b170a7db045cd0ad02185a","union_id":"on_21fcd99f23e1594eb2281ce43233776c","user_id":null}}} [conn_id=7541235215446786051]
+2025-08-22 11:41:23,407 - Lark - DEBUG - ping success [conn_id=7541235215446786051]
+2025-08-22 11:41:23,613 - Lark - DEBUG - receive pong [conn_id=7541235215446786051]
